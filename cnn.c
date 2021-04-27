@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "util_func.h"
+#include "util_para.h"
 //#include "mnist.h"
 
-#define IMAGE_SIZE 784 // 28*28=784
-#define NUM_TRAINS 60000
-#define NUM_TESTS 10000
+//#define IMAGE_SIZE 784 // 28*28=784
+//#define NUM_TRAINS 60000
+//#define NUM_TESTS 10000
 
 int main () {
 
@@ -26,7 +27,9 @@ int main () {
     if ((i+1) % 28 == 0) putchar('\n');
   }
 
-  
+  conv_layer();
+
+  relu_layer();
 
   return 0;
 }

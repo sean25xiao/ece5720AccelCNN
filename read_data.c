@@ -1,4 +1,5 @@
 #include "mnist.h"
+#include "util_para.h"
 
 void read_data(double **train_im, double **test_im) {
 
