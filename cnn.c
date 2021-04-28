@@ -34,7 +34,7 @@ int main () {
 
   conv_layer(train_image, conv_res);
 
-  relu_layer();
+  relu_layer(conv_res);
 
   free(train_image); free(test_image); free(conv_res);
 

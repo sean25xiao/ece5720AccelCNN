@@ -88,7 +88,7 @@ void conv_layer(double **trained_im, double **result_im) {
           }
         }
 
-        result_im[img_i][conv_i*IMAGE_DIM+conv_j] = accu;
+        result_im[img_i][conv_i*IMAGE_DIM+conv_j] = accu + CONV_BIAS;
 
         /*printf("conv_i is %d, conv_j is %d \n", conv_i, conv_j);
         for (int i = 0; i < KERNEL_SIZE; i++) { // TODO: Delete this

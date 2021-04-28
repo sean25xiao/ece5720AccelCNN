@@ -9,3 +9,7 @@
 #define DEPTH 1
 #define CONV_STRIDE 1
 #define KERNEL_CENTER 4
+#define CONV_BIAS 1
+
+// ======== Parameters for ReLU ========
+#define ZERO 0
