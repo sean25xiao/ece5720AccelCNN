@@ -7,34 +7,22 @@
  * Output: Result matrix after get convoluted
  */
 
-
 void conv_layer(double **trained_im, double **result_im) {
 
-  // ======== Allocate the Convolution Kernel ========
-  double **convKernel = (double **) malloc( KERNEL_SIZE * sizeof(double *));
-  for (int i = 0; i < KERNEL_SIZE; i++) {
-    convKernel[i] = (double *) malloc(KERNEL_SIZE * sizeof(double));
-  }
-
-  double **imageMap = (double **) malloc( KERNEL_SIZE * sizeof(double *));
-  for (int i = 0; i < KERNEL_SIZE; i++) {
-    imageMap[i] = (double *) malloc(KERNEL_SIZE * sizeof(double));
-  }
-  puts("test 1 \n");
 
   // ======== 1. Zero-Padding ========
   int new_dim    = IMAGE_DIM + KERNEL_SIZE - 1;
   int new_size   = new_dim * new_dim;
   int extra_size = KERNEL_SIZE / 2;   // round down automatically
   double **padded_im = (double **) malloc(NUM_TRAINS * sizeof(double *));
-  for (int i = 0; i < KERNEL_SIZE; i++) {
+  for (int i = 0; i < NUM_TRAINS; i++) {
     padded_im[i] = (double *) malloc(new_size * sizeof(double));
   }
   puts("test 2 \n");
 
   for (int i = 0; i < NUM_TRAINS; i++) {
     for (int j = 0; j < new_size; j++) {
-      printf("i is %d, j is %d \n", i, j);
+      //printf("i is %d, j is %d \n", i, j);
       padded_im[i][j] = 0.0;
     }
   }
@@ -48,18 +36,61 @@ void conv_layer(double **trained_im, double **result_im) {
       }
     }
   }
-  puts("test 4 \n");
 
-  for (int i = 0; i < new_dim; i++) {
-    printf("%lf, ", padded_im[0][i]);
+  for (int i = 0; i < new_size; i++) { // TODO: Delete this
+    printf("%1.1f ", padded_im[0][i]);
+		if ((i+1) % 30 == 0) putchar('\n');
   }
 
-  // ======== Load the Mapped Image part from trained_im to imageMap ========
+  // ======== 2. Do Convolution Operation  ========
+
+  // -------- 2.1 Create Kernel --------
+  double **convKernel = (double **) malloc( KERNEL_SIZE * sizeof(double *));
+  for (int i = 0; i < KERNEL_SIZE; i++) {
+    convKernel[i] = (double *) malloc(KERNEL_SIZE * sizeof(double));
+  }
+
   for (int i = 0; i < KERNEL_SIZE; i++) {
     for (int j = 0; j < KERNEL_SIZE; j++) {
-      //imageMap[i][j] = trained_im[][];
+      convKernel[i][j] = -1.0;
     }
   }
+  convKernel[KERNEL_SIZE/2][KERNEL_SIZE/2] = (double)KERNEL_CENTER;
+  
+  for (int i = 0; i < KERNEL_SIZE; i++) { // TODO: Delete this
+    for (int j = 0; j < KERNEL_SIZE; j++) {
+      printf("%1.1f ", convKernel[i][j]);
+    }
+    printf("\n");
+  }
+
+  // -------- 2.2 Load Mapped Image from the dataset --------
+  double **imageMap = (double **) malloc( KERNEL_SIZE * sizeof(double *));
+  for (int i = 0; i < KERNEL_SIZE; i++) {
+    imageMap[i] = (double *) malloc(KERNEL_SIZE * sizeof(double));
+  }
+
+  /// conv_i and conv_j are the top left element of kernel
+  for (int conv_i = 0; conv_i <= new_dim-KERNEL_SIZE; conv_i = conv_i + CONV_STRIDE) {
+    for (int conv_j = 0; conv_j <= new_dim-KERNEL_SIZE; conv_j = conv_j + CONV_STRIDE) {
+      
+      for (int i = 0; i < KERNEL_SIZE; i++) {
+        for (int j = 0; j < KERNEL_SIZE; j++) {
+          imageMap[i][j] = padded_im[0][(i+conv_i)*new_dim+(j+conv_j)];
+        }
+      }
+
+      printf("conv_i is %d, conv_j is %d \n", conv_i, conv_j);
+      for (int i = 0; i < KERNEL_SIZE; i++) { // TODO: Delete this
+        for (int j = 0; j < KERNEL_SIZE; j++) {
+          printf("%1.1f ", imageMap[i][j]);
+        }
+        printf("\n");
+      }
+
+    } // end of conv_j loop
+
+  } // end of conv_i loop
 
   free(padded_im); free(convKernel); free(imageMap);
   printf("conv_layer: This is conv layer \n");

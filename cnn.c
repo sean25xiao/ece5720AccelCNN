@@ -27,7 +27,7 @@ int main () {
     if ((i+1) % 28 == 0) putchar('\n');
   } */
 
-  conv_layer();
+  conv_layer(train_image);
 
   relu_layer();
 

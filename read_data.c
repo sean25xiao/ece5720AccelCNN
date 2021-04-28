@@ -12,11 +12,24 @@ void read_data(double **train_im, double **test_im) {
    */
   load_mnist();
 
-  train_im = (double **)train_image;
+  //train_im = (double **)train_image;
   test_im  = (double **)test_image;
+
+  for (int i = 0; i < NUM_TRAINS; i++) {
+    for (int j = 0; j < IMAGE_SIZE; j++) {
+      train_im[i][j] = train_image[i][j];
+    }
+  }
 
   printf("read_data.c: Loaded images to arrays \n");
 
-  //save_mnist_pgm(test_im, 0);
+  //save_mnist_pgm(train_im, 0);
+
+  int i;
+	for (i=0; i<784; i++) {
+    //printf("i is %d \n", i);
+		printf("%1.1f ", train_im[0][i]);
+		if ((i+1) % 28 == 0) putchar('\n');
+	} 
 
 }

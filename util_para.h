@@ -8,3 +8,4 @@
 #define KERNEL_SIZE 3
 #define DEPTH 1
 #define CONV_STRIDE 1
+#define KERNEL_CENTER 4
