@@ -22,10 +22,10 @@ int main () {
  
   read_data(train_image, test_image);
 
-  for (int i = 0; i < IMAGE_SIZE; i++) {
+  /*for (int i = 0; i < IMAGE_SIZE; i++) {
     printf("%1.1f ", test_image[0][i]);
     if ((i+1) % 28 == 0) putchar('\n');
-  }
+  } */
 
   conv_layer();
 
