@@ -27,9 +27,16 @@ int main () {
     if ((i+1) % 28 == 0) putchar('\n');
   } */
 
-  conv_layer(train_image);
+  double **conv_res = (double **) malloc(NUM_TRAINS * sizeof(double *));
+  for (int i = 0; i < NUM_TRAINS; i++) {
+    conv_res[i] = (double *) malloc(IMAGE_SIZE * sizeof(double));
+  }
+
+  conv_layer(train_image, conv_res);
 
   relu_layer();
+
+  free(train_image); free(test_image); free(conv_res);
 
   return 0;
 }

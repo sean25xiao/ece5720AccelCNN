@@ -12,14 +12,17 @@ void read_data(double **train_im, double **test_im) {
    */
   load_mnist();
 
-  //train_im = (double **)train_image;
-  test_im  = (double **)test_image;
-
   for (int i = 0; i < NUM_TRAINS; i++) {
     for (int j = 0; j < IMAGE_SIZE; j++) {
       train_im[i][j] = train_image[i][j];
     }
   }
+
+  for (int i = 0; i < NUM_TESTS; i++) {
+    for (int j = 0; j < IMAGE_SIZE; j++) {
+      test_im[i][j] = test_image[i][j];
+    }
+  } 
 
   printf("read_data.c: Loaded images to arrays \n");
 
