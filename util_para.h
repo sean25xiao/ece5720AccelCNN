@@ -1,7 +1,7 @@
 // ======== Constants for MNIST Dataset ========
 #define IMAGE_DIM  28
 #define IMAGE_SIZE 784 // 28*28=784
-#define NUM_TRAINS 15000
+#define NUM_TRAINS 60000
 #define NUM_TESTS 10000
 
 // ======== Parameters for Convolution Layer ========

@@ -12,7 +12,7 @@ void relu_layer(double **conv_im) {
 
   for (int i = 0; i < IMAGE_SIZE; i++) { // TODO: Delete this
     printf("%1.1f ", conv_im[0][i]);
-		if ((i+1) % IMAGE_SIZE == 0) putchar('\n');
+		if ((i+1) % IMAGE_DIM == 0) putchar('\n');
   }
   printf("=================\n");
 
@@ -25,7 +25,7 @@ void relu_layer(double **conv_im) {
 
   for (int i = 0; i < IMAGE_SIZE; i++) { // TODO: Delete this
     printf("%1.1f ", conv_im[0][i]);
-		if ((i+1) % IMAGE_SIZE == 0) putchar('\n');
+		if ((i+1) % IMAGE_DIM == 0) putchar('\n');
   }
   printf("relu_layer: This is ReLU layer \n");
 }

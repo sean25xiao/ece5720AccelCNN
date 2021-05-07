@@ -27,25 +27,36 @@ int main () {
     if ((i+1) % 28 == 0) putchar('\n');
   } */
 
-  double **conv_res = (double **) malloc(NUM_TRAINS * sizeof(double *));
+  // ========================================================
+ 
+  // Convolution 1.0
+  double **conv_1 = (double **) malloc(NUM_TRAINS * sizeof(double *));
   for (int i = 0; i < NUM_TRAINS; i++) {
-    conv_res[i] = (double *) malloc(IMAGE_SIZE * sizeof(double));
+    conv_1[i] = (double *) malloc(IMAGE_SIZE * sizeof(double));
   }
+  conv_layer(train_image, conv_1, KN_HORIZONTAL_EDGE);
+  free(train_image); free(test_image);
 
-  conv_layer(train_image, conv_res, KN_HORIZONTAL_EDGE);
-  free(train_image);
+  // ReLU 1.0
+  relu_layer(conv_1);
 
-  relu_layer(conv_res);
+  // Convolution 2.0
+  /*double **conv_2 = (double **) malloc(NUM_TRAINS * sizeof(double *));
+  for (int i = 0; i < NUM_TRAINS; i++) {
+    conv_2[i] = (double *) malloc(IMAGE_SIZE * sizeof(double));
+  }
+  conv_layer(conv_1, conv_2, KN_VERTICAL_EDGE);
+  free(conv_1); */
 
+  // Pooling 1.0
   double **pooling_res = (double **) malloc(NUM_TRAINS * sizeof(double *));
   for (int i = 0; i < NUM_TRAINS; i++) {
     pooling_res[i] = (double *) malloc((IMAGE_DIM/POOLING_WIN_SIZE) * (IMAGE_DIM/POOLING_WIN_SIZE) * sizeof(double));
   }
-  printf("p_res[0][0] is %1.1f \n", pooling_res[0][0]);
+  //printf("p_res[0][0] is %1.1f \n", pooling_res[0][0]);
+  pooling_layer(conv_1, pooling_res, 1);
 
-  pooling_layer(conv_res, pooling_res, 1);
-
-  free(test_image); free(conv_res); free(pooling_res);
+  free(conv_1); free(pooling_res);
 
   return 0;
 }
