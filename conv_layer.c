@@ -7,7 +7,7 @@
  * Output: Result matrix after get convoluted
  */
 
-void conv_layer(double **trained_im, double **result_im) {
+void conv_layer(double **trained_im, double **result_im, int kn_type) {
 
 
   // ======== 1. Zero-Padding ========
@@ -50,12 +50,34 @@ void conv_layer(double **trained_im, double **result_im) {
     convKernel[i] = (double *) malloc(KERNEL_SIZE * sizeof(double));
   }
 
-  for (int i = 0; i < KERNEL_SIZE; i++) {
-    for (int j = 0; j < KERNEL_SIZE; j++) {
-      convKernel[i][j] = -1.0;
-    }
+  if (kn_type == KN_HORIZONTAL_EDGE) {
+    convKernel[0][0] = -1.0;
+    convKernel[0][1] = -2.0;
+    convKernel[0][2] = -1.0;
+    convKernel[1][0] = 0.0;
+    convKernel[1][1] = 0.0;
+    convKernel[1][2] = 0.0;
+    convKernel[2][0] = convKernel[0][0] * (-1);
+    convKernel[2][1] = convKernel[0][1] * (-1);
+    convKernel[2][2] = convKernel[0][2] * (-1);  
   }
-  convKernel[KERNEL_SIZE/2][KERNEL_SIZE/2] = (double)KERNEL_CENTER;
+  else if (kn_type == KN_VERTICAL_EDGE) {
+    convKernel[0][0] = -1.0;
+    convKernel[1][0] = -2.0;
+    convKernel[2][0] = -1.0;
+    convKernel[0][1] = 0.0;
+    convKernel[1][1] = 0.0;
+    convKernel[2][1] = 0.0;
+    convKernel[0][2] = convKernel[0][0] * (-1);
+    convKernel[1][2] = convKernel[1][0] * (-1);
+    convKernel[2][2] = convKernel[2][0] * (-1);  
+  }
+  else {
+    printf("conv_layer.c: please set up the kernel \n");
+    printf("Usage: Set: KN_VERTICAL_EDGE    to use Kernel to detect vertical   edge \n");
+    printf("       Set: KN_HORIZAONTAL_EDGE to use Kernel to detect horizontal edge \n");
+    exit(0);
+  }
   
   for (int i = 0; i < KERNEL_SIZE; i++) { // TODO: Delete this
     for (int j = 0; j < KERNEL_SIZE; j++) {

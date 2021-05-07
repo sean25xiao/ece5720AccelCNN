@@ -32,11 +32,20 @@ int main () {
     conv_res[i] = (double *) malloc(IMAGE_SIZE * sizeof(double));
   }
 
-  conv_layer(train_image, conv_res);
+  conv_layer(train_image, conv_res, KN_HORIZONTAL_EDGE);
+  free(train_image);
 
   relu_layer(conv_res);
 
-  free(train_image); free(test_image); free(conv_res);
+  double **pooling_res = (double **) malloc(NUM_TRAINS * sizeof(double *));
+  for (int i = 0; i < NUM_TRAINS; i++) {
+    pooling_res[i] = (double *) malloc((IMAGE_DIM/POOLING_WIN_SIZE) * (IMAGE_DIM/POOLING_WIN_SIZE) * sizeof(double));
+  }
+  printf("p_res[0][0] is %1.1f \n", pooling_res[0][0]);
+
+  pooling_layer(conv_res, pooling_res, 1);
+
+  free(test_image); free(conv_res); free(pooling_res);
 
   return 0;
 }

@@ -2,8 +2,8 @@
 CC=gcc
 CFLAGS=-c -std=gnu99
 
-output: cnn.o read_data.o conv_layer.o relu_layer.o
-	$(CC) cnn.o read_data.o conv_layer.o relu_layer.o -o output
+output: cnn.o read_data.o conv_layer.o relu_layer.o pooling_layer.o
+	$(CC) cnn.o read_data.o conv_layer.o relu_layer.o pooling_layer.o -o output
 
 cnn.o: cnn.c
 	$(CC) $(CFLAGS) cnn.c
@@ -16,6 +16,9 @@ conv_layer.o: conv_layer.c
 
 relu_layer.o: relu_layer.c
 	$(CC) $(CFLAGS) relu_layer.c
+
+pooling_layer.o: pooling_layer.c
+	$(CC) $(CFLAGS) pooling_layer.c
 
 clean:
 	rm -rf *.o output
