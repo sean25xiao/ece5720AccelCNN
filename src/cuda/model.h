@@ -18,7 +18,7 @@ public:
     // Build model structure here
     Input input_layer = Input(28,28);
     Conv2d conv_1 = Conv2d(28,28,1,5,6,1);
-    Conv2d conv_2 = Conv2d(12,12,1,12,10,1);
+    Conv2d conv_2 = Conv2d(24,24,6,24,10,1);
 
     Model(float learning_rate);
     ~Model();
