@@ -1,6 +1,7 @@
 /*
  * Convolutional Layer
  */
+#define LEARNING_RATE 0.01
 
 class Conv2d
 {
@@ -22,6 +23,7 @@ private:
     int O;
 
 public:
+    int weight_dim;
     float* prev_output;
     float* prev_d_output;
 
@@ -47,4 +49,12 @@ __global__ void forward_conv(float* input, float* output, float* weight,
         int k_sz, int ot_w, int ot_h, int ot_c);
 
 __global__ void forward_add_bias(float *output, float *bias, int ot_w, int ot_h, int ot_c);
+
+
+__global__ void backward_gradient_weight(float *d_weight, float *d_output, float *prev_output, int k_sz, int ot_w, int ot_h, int ot_c);
+
+
+__global__ void backward_update_bias(float *bias, float *d_output, int ot_w, int ot_h, int ot_c);
+
+__global__ void backward_gradient_prev(float *prev_d_output, float *weight, float* d_output, int k_sz, int ot_w, int ot_h, int ot_c);
 

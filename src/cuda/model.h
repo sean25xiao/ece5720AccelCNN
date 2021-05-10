@@ -1,22 +1,30 @@
-#include "layers/conv2d.h"
 #include "layers/input.h"
+#include "layers/conv2d.h"
+#include "layers/loss.h"
+
+#include <cublas_v2.h>
+#include <cuda.h>
 
 class Model
 {
 private:
-    // 这里创建各个Layer的实例
-    double learning_rate;
+    float learning_rate;
+    cublasHandle_t handle;    
 
-    Input input_layer;
-    Conv2d conv_1;
-    Conv2d conv_2;
-
-    void forward(double data[28][28]);
+    void forward(float data[28][28]);
     void backward();
 
 public:
-    Model();
+    // Build model structure here
+    Input input_layer = Input(28,28);
+    Conv2d conv_1 = Conv2d(28,28,1,5,6,1);
+    Conv2d conv_2 = Conv2d(12,12,1,12,10,1);
+
+    Model(float learning_rate);
     ~Model();
-    void feed(double data[28][28]);
+    float feed(float data[28][28], int label, bool isTrain);
     void test();
+    void apply_grad(float* weight, float* d_weight, int N);
 };
+
+__global__ void cuda_apply_grad(float* weight, float* d_weight, int N, float learning_rate);

@@ -1,5 +1,5 @@
 #include "conv2d.h"
-#include <cstdlib>
+#include <cstdio>
 
 Conv2d::Conv2d(int input_width, int input_height, int input_channels, int kernel_size, int output_channels, int stride)
 {
@@ -17,10 +17,12 @@ Conv2d::Conv2d(int input_width, int input_height, int input_channels, int kernel
     this->ot_h = (in_h - kernel_size) / stride + 1;
     this->ot_c = output_channels;
 
+    printf("Conv Layer, input_shape=(%d,%d,%d), output_shape=(%d,%d,%d)\n",in_c, in_w, in_h, ot_c, ot_w, ot_h);
+
     this->M = k_sz * k_sz;
     this->N = ot_c;
     this->O = ot_w * ot_h * ot_c;
-
+    this->weight_dim = N*M;
     // random initialize weight and bias
     float h_weight[N][M];
     float h_bias[N];
@@ -28,10 +30,12 @@ Conv2d::Conv2d(int input_width, int input_height, int input_channels, int kernel
     for (int i = 0; i < N; ++i)
     {
         h_bias[i] = 0.5f - float(rand()) / float(RAND_MAX);
+        // h_bias[i] = 0; // DEBUG
 
         for (int j = 0; j < M; ++j)
         {
             h_weight[i][j] = 0.5f - float(rand()) / float(RAND_MAX);
+            // h_weight[i][j] = 1; // DEBUG
         }
     }
 
@@ -78,10 +82,10 @@ void Conv2d::backward_reset()
 void Conv2d::forward(float *prev_output)
 {
     // Convolution
-    forward_conv(prev_input, output, weight, k_sz, ot_w, ot_h, ot_c);
+    forward_conv<<<64, 64>>>(prev_output, output, weight, k_sz, ot_w, ot_h, ot_c);
 
     // Add bias
-    forward_add_bias(output, bias, ot_w, ot_h, ot_c);
+    forward_add_bias<<<64, 64>>>(output, bias, ot_w, ot_h, ot_c);
 };
 
 /*
@@ -91,15 +95,16 @@ void Conv2d::forward(float *prev_output)
 void Conv2d::backward(float *prev_output, float *prev_d_output)
 {
     // Compute gradient of weight
-    backward_gradient_weight(d_weight, d_output, prev_output, k_sz, ot_w, ot_h, ot_c);
+    backward_gradient_weight<<<64, 64>>>(d_weight, d_output, prev_output, k_sz, ot_w, ot_h, ot_c);
     // Update Bias
-    backward_update_bias(bias, d_output, ot_w, ot_h, ot_c);
+    backward_update_bias<<<64, 64>>>(bias, d_output, ot_w, ot_h, ot_c);
     // Update prev_d_output
-    backward_gradient_prev(prev_d_output, weight, d_output, k_sz, ot_w, ot_h, ot_c);
+    if ( prev_d_output == NULL) return;
+    backward_gradient_prev<<<64, 64>>>(prev_d_output, weight, d_output, k_sz, ot_w, ot_h, ot_c);
 };
 
 __global__ void backward_gradient_weight(float *d_weight, float *d_output, float *prev_output,
-                                int k_sz, int ot_w, int ot_h, int ot_c)
+                                         int k_sz, int ot_w, int ot_h, int ot_c)
 {
     int pos = blockIdx.x * blockDim.x + threadIdx.x;
     int size = blockDim.x * gridDim.x;
@@ -117,7 +122,8 @@ __global__ void backward_gradient_weight(float *d_weight, float *d_output, float
         int i4 = ((idx /= k_sz) % ot_w);
         int i5 = ((idx /= ot_w) % ot_h);
 
-        atomicAdd(&d_weight[i1][i2][i3], d_output[i1][i4][i5] * prev_output[i4 + i2][i5 + i3] / d);
+        atomicAdd(&d_weight[i1 * k_sz * k_sz + i2 * k_sz + i3], d_output[i1 * ot_w * ot_h + i4 * ot_h + i5] * prev_output[(i4 + i2) * (k_sz + ot_h) + i5 + i3] / d);
+        // atomicAdd(&d_weight[i1][i2][i3], d_output[i1][i4][i5] * prev_output[i4 + i2][i5 + i3] / d);
     }
 }
 
@@ -137,17 +143,18 @@ __global__ void backward_update_bias(float *bias, float *d_output,
         int i2 = ((idx /= ot_c) % ot_w);
         int i3 = ((idx /= ot_w) % ot_h);
 
-        atomicAdd(&bias[i1], dt * d_output[i1][i2][i3] / d);
+        atomicAdd(&bias[i1], LEARNING_RATE * d_output[i1 * ot_w * ot_h + i2 * ot_h + i3] / d);
+        // atomicAdd(&bias[i1], LEARNING_RATE * d_output[i1][i2][i3] / d);
     }
 }
 
-__global__ void backward_gradient_prev(float *prev_d_output, float *weight, float d_output,
-                                    int k_sz, int ot_w, int ot_h, int ot_c)
+__global__ void backward_gradient_prev(float *prev_d_output, float *weight, float *d_output,
+                                       int k_sz, int ot_w, int ot_h, int ot_c)
 {
     int pos = blockIdx.x * blockDim.x + threadIdx.x;
     int size = blockDim.x * gridDim.x;
 
-    int N = k_sz*k_sz*ot_c*ot_w*ot_h;
+    int N = k_sz * k_sz * ot_c * ot_w * ot_h;
 
     for (int n = N * pos / size; n < N * (pos + 1) / size; ++n)
     {
@@ -159,7 +166,9 @@ __global__ void backward_gradient_prev(float *prev_d_output, float *weight, floa
         int i5 = ((idx /= ot_c) % ot_w);
         int i6 = ((idx /= ot_w) % ot_h);
 
-        atomicAdd(&d_output[i4][i5 * 4 + i2][i6 * 4 + i3], n_weight[i1][i2][i3] * nd_preact[i4][i5][i6]);
+        atomicAdd(&prev_d_output[i4 * (ot_w * 4 + k_sz) + (i5 * 4 + i2) * (ot_h * 4 + k_sz) + i6 * 4 + i3],
+                  weight[i1 * k_sz * k_sz + i2 * k_sz + i3] * d_output[i4 * ot_w * ot_h + i5 * ot_h + i6]);
+        // atomicAdd(&prev_d_output[i4][i5 * 4 + i2][i6 * 4 + i3], weight[i1][i2][i3] * d_output[i4][i5][i6]);
     }
 }
 
@@ -180,7 +189,8 @@ __global__ void forward_conv(float *input, float *output, float *weight,
         int i4 = ((idx /= ot_c) % ot_w);
         int i5 = ((idx /= ot_w) % ot_h);
 
-        atomicAdd(&output[i3][i4][i5], weight[i3][i1][i2] * input[i4 + i1][i5 + i2]);
+        atomicAdd(&output[i3*ot_w*ot_h+i4*ot_h+i5], weight[i3*k_sz*k_sz+i1*k_sz + i2] * input[(i4 + i1)*(k_sz+ot_h)+i5 + i2]);
+        // atomicAdd(&output[i3][i4][i5], weight[i3][i1][i2] * input[i4 + i1][i5 + i2]);
     }
 }
 
@@ -198,6 +208,7 @@ __global__ void forward_add_bias(float *output, float *bias, int ot_w, int ot_h,
         int i2 = ((idx /= ot_c) % ot_w);
         int i3 = ((idx /= ot_w) % ot_h);
 
-        output[i1][i2][i3] += bias[i1];
+        output[i1 *ot_w*ot_h+i2*ot_h+i3] += bias[i1];
+        // output[i1][i2][i3] += bias[i1];
     }
 }
