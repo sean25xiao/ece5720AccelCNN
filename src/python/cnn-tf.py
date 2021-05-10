@@ -15,9 +15,9 @@ x_test = x_test.reshape((10000,28,28,1))
 # build model
 model = Sequential()
 model.add(layers.Conv2D(filters=6, kernel_size=(5,5),input_shape=(28,28,1)))
-model.add(layers.MaxPooling2D( pool_size = (4,4)))
+model.add(layers.Conv2D(filters=10, kernel_size=(24,24)))
 model.add(layers.Flatten())
-model.add(layers.Dense(10,activation='softmax'))
+model.add(layers.Softmax())
 
 model.compile(optimizer='adam',loss='sparse_categorical_crossentropy',metrics=['accuracy'])
 
@@ -25,7 +25,7 @@ model.compile(optimizer='adam',loss='sparse_categorical_crossentropy',metrics=['
 model.summary() 
 
 tic = time.perf_counter() # timing
-model.fit(x_train, y_train, epochs=5, batch_size = 100) 
+model.fit(x_train, y_train, epochs=20, batch_size = 1) 
 toc = time.perf_counter()
 
 # evaluate this model with test data
