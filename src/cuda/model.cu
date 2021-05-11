@@ -26,23 +26,45 @@ float Model::feed(float data[28][28], int label, bool isTrain){
 
 // Forward
 void Model::forward(float data[28][28]){
+	// reset
 	conv_1.forward_reset();
+	sigm_1.forward_reset();
 	conv_2.forward_reset();
-
+	// sigm_2.forward_reset();
+	// conv_3.forward_reset();
+	// forward
     input_layer.forward(*data);
     conv_1.forward(input_layer.output);
-    conv_2.forward(conv_1.output);
+	sigm_1.forward(conv_1.output);
+
+    conv_2.forward(sigm_1.output);
+	// sigm_2.forward(conv_2.output);
+
+    // conv_3.forward(conv_2.output);
 };
 
 // Backward 
 void Model::backward(){
+	// reset (Do not reset last layer)
 	conv_1.backward_reset();
+	sigm_1.backward_reset();
+	
+	// conv_2.backward_reset();
+	// sigm_2.backward_reset();
+	
+	// backward
+	// conv_3.backward(conv_2.output, conv_2.d_output);
 
-    conv_2.backward(conv_1.output, conv_1.d_output);
+	// sigm_2.backward(conv_2.d_output);
+	conv_2.backward(sigm_1.output, sigm_1.d_output);
+
+	sigm_1.backward(conv_1.d_output);
     conv_1.backward(input_layer.output, NULL);
 
 	apply_grad(conv_1.weight, conv_1.d_weight, conv_1.weight_dim);
     apply_grad(conv_2.weight, conv_2.d_weight, conv_2.weight_dim);
+	// apply_grad(conv_3.weight, conv_3.d_weight, conv_3.weight_dim);
+    // apply_grad(conv_4.weight, conv_4.d_weight, conv_4.weight_dim);
 };
 
 void Model::apply_grad(float* weight, float* d_weight, int N)

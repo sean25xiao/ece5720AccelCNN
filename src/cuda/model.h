@@ -1,6 +1,7 @@
 #include "layers/input.h"
 #include "layers/conv2d.h"
 #include "layers/loss.h"
+#include "layers/sigmoid.h"
 
 #include <cublas_v2.h>
 #include <cuda.h>
@@ -18,7 +19,15 @@ public:
     // Build model structure here
     Input input_layer = Input(28,28);
     Conv2d conv_1 = Conv2d(28,28,1,5,6,1);
+    Sigmoid sigm_1 = Sigmoid(6*24*24);
+
     Conv2d conv_2 = Conv2d(24,24,6,24,10,1);
+    // Sigmoid sigm_2 = Sigmoid(6*20*20);
+
+    // Conv2d conv_3 = Conv2d(20,20,6,20,10,1);
+    // Sigmoid sigm_3 = Sigmoid(6*5*5);
+
+    // Conv2d conv_4 = Conv2d(5,5,6,5,10,1);
 
     Model(float learning_rate);
     ~Model();

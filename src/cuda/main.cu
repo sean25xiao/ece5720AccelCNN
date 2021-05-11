@@ -68,7 +68,7 @@ int main(int argc, const char **argv)
     printf("==========================================\n\n");
 
     // Start training
-    int EPOCH = 100;
+    int EPOCH = 500;
     clock_t start, end;
     double timing=0;
 

@@ -1,0 +1,2371 @@
+Loading data .. 
+Successfully loaded 60000 training samples and 10000 testing samples
+
+==========================================
+Creating CNN model...
+Input Layer, output_shape=(28,28)
+Conv Layer, input_shape=(1,28,28), output_shape=(6,24,24)
+Sigmoid Layer, input_size=3456
+Conv Layer, input_shape=(6,24,24), output_shape=(10,1,1)
+==========================================
+
+Epoch 1, loss=1.999, time 1.873e+01
+
+Error number = 8641
+Model performance on test data: accuracy = 1.3590e-01
+-----------------------------------------------------------
+Epoch 2, loss=1.890, time 3.746e+01
+
+Error number = 8093
+Model performance on test data: accuracy = 1.9070e-01
+-----------------------------------------------------------
+Epoch 3, loss=1.667, time 5.618e+01
+
+Error number = 7605
+Model performance on test data: accuracy = 2.3950e-01
+-----------------------------------------------------------
+Epoch 4, loss=1.533, time 7.491e+01
+
+Error number = 7236
+Model performance on test data: accuracy = 2.7640e-01
+-----------------------------------------------------------
+Epoch 5, loss=1.485, time 9.361e+01
+
+Error number = 6996
+Model performance on test data: accuracy = 3.0040e-01
+-----------------------------------------------------------
+Epoch 6, loss=1.492, time 1.123e+02
+
+Error number = 6937
+Model performance on test data: accuracy = 3.0630e-01
+-----------------------------------------------------------
+Epoch 7, loss=1.510, time 1.310e+02
+
+Error number = 6928
+Model performance on test data: accuracy = 3.0720e-01
+-----------------------------------------------------------
+Epoch 8, loss=1.506, time 1.497e+02
+
+Error number = 6819
+Model performance on test data: accuracy = 3.1810e-01
+-----------------------------------------------------------
+Epoch 9, loss=1.476, time 1.683e+02
+
+Error number = 6708
+Model performance on test data: accuracy = 3.2920e-01
+-----------------------------------------------------------
+Epoch 10, loss=1.433, time 1.870e+02
+
+Error number = 6564
+Model performance on test data: accuracy = 3.4360e-01
+-----------------------------------------------------------
+Epoch 11, loss=1.387, time 2.057e+02
+
+Error number = 6373
+Model performance on test data: accuracy = 3.6270e-01
+-----------------------------------------------------------
+Epoch 12, loss=1.343, time 2.244e+02
+
+Error number = 6169
+Model performance on test data: accuracy = 3.8310e-01
+-----------------------------------------------------------
+Epoch 13, loss=1.303, time 2.430e+02
+
+Error number = 5938
+Model performance on test data: accuracy = 4.0620e-01
+-----------------------------------------------------------
+Epoch 14, loss=1.268, time 2.617e+02
+
+Error number = 5790
+Model performance on test data: accuracy = 4.2100e-01
+-----------------------------------------------------------
+Epoch 15, loss=1.237, time 2.804e+02
+
+Error number = 5617
+Model performance on test data: accuracy = 4.3830e-01
+-----------------------------------------------------------
+Epoch 16, loss=1.210, time 2.991e+02
+
+Error number = 5485
+Model performance on test data: accuracy = 4.5150e-01
+-----------------------------------------------------------
+Epoch 17, loss=1.187, time 3.177e+02
+
+Error number = 5353
+Model performance on test data: accuracy = 4.6470e-01
+-----------------------------------------------------------
+Epoch 18, loss=1.167, time 3.364e+02
+
+Error number = 5224
+Model performance on test data: accuracy = 4.7760e-01
+-----------------------------------------------------------
+Epoch 19, loss=1.150, time 3.551e+02
+
+Error number = 5101
+Model performance on test data: accuracy = 4.8990e-01
+-----------------------------------------------------------
+Epoch 20, loss=1.134, time 3.737e+02
+
+Error number = 5023
+Model performance on test data: accuracy = 4.9770e-01
+-----------------------------------------------------------
+Epoch 21, loss=1.121, time 3.924e+02
+
+Error number = 4956
+Model performance on test data: accuracy = 5.0440e-01
+-----------------------------------------------------------
+Epoch 22, loss=1.109, time 4.111e+02
+
+Error number = 4890
+Model performance on test data: accuracy = 5.1100e-01
+-----------------------------------------------------------
+Epoch 23, loss=1.099, time 4.298e+02
+
+Error number = 4830
+Model performance on test data: accuracy = 5.1700e-01
+-----------------------------------------------------------
+Epoch 24, loss=1.090, time 4.484e+02
+
+Error number = 4758
+Model performance on test data: accuracy = 5.2420e-01
+-----------------------------------------------------------
+Epoch 25, loss=1.082, time 4.671e+02
+
+Error number = 4693
+Model performance on test data: accuracy = 5.3070e-01
+-----------------------------------------------------------
+Epoch 26, loss=1.075, time 4.858e+02
+
+Error number = 4635
+Model performance on test data: accuracy = 5.3650e-01
+-----------------------------------------------------------
+Epoch 27, loss=1.068, time 5.044e+02
+
+Error number = 4582
+Model performance on test data: accuracy = 5.4180e-01
+-----------------------------------------------------------
+Epoch 28, loss=1.062, time 5.231e+02
+
+Error number = 4546
+Model performance on test data: accuracy = 5.4540e-01
+-----------------------------------------------------------
+Epoch 29, loss=1.057, time 5.418e+02
+
+Error number = 4519
+Model performance on test data: accuracy = 5.4810e-01
+-----------------------------------------------------------
+Epoch 30, loss=1.052, time 5.605e+02
+
+Error number = 4466
+Model performance on test data: accuracy = 5.5340e-01
+-----------------------------------------------------------
+Epoch 31, loss=1.047, time 5.791e+02
+
+Error number = 4439
+Model performance on test data: accuracy = 5.5610e-01
+-----------------------------------------------------------
+Epoch 32, loss=1.043, time 5.978e+02
+
+Error number = 4386
+Model performance on test data: accuracy = 5.6140e-01
+-----------------------------------------------------------
+Epoch 33, loss=1.039, time 6.165e+02
+
+Error number = 4361
+Model performance on test data: accuracy = 5.6390e-01
+-----------------------------------------------------------
+Epoch 34, loss=1.035, time 6.351e+02
+
+Error number = 4337
+Model performance on test data: accuracy = 5.6630e-01
+-----------------------------------------------------------
+Epoch 35, loss=1.032, time 6.538e+02
+
+Error number = 4325
+Model performance on test data: accuracy = 5.6750e-01
+-----------------------------------------------------------
+Epoch 36, loss=1.029, time 6.725e+02
+
+Error number = 4298
+Model performance on test data: accuracy = 5.7020e-01
+-----------------------------------------------------------
+Epoch 37, loss=1.025, time 6.912e+02
+
+Error number = 4278
+Model performance on test data: accuracy = 5.7220e-01
+-----------------------------------------------------------
+Epoch 38, loss=1.022, time 7.098e+02
+
+Error number = 4249
+Model performance on test data: accuracy = 5.7510e-01
+-----------------------------------------------------------
+Epoch 39, loss=1.019, time 7.285e+02
+
+Error number = 4235
+Model performance on test data: accuracy = 5.7650e-01
+-----------------------------------------------------------
+Epoch 40, loss=1.016, time 7.472e+02
+
+Error number = 4203
+Model performance on test data: accuracy = 5.7970e-01
+-----------------------------------------------------------
+Epoch 41, loss=1.013, time 7.659e+02
+
+Error number = 4167
+Model performance on test data: accuracy = 5.8330e-01
+-----------------------------------------------------------
+Epoch 42, loss=1.010, time 7.845e+02
+
+Error number = 4144
+Model performance on test data: accuracy = 5.8560e-01
+-----------------------------------------------------------
+Epoch 43, loss=1.007, time 8.032e+02
+
+Error number = 4126
+Model performance on test data: accuracy = 5.8740e-01
+-----------------------------------------------------------
+Epoch 44, loss=1.004, time 8.219e+02
+
+Error number = 4121
+Model performance on test data: accuracy = 5.8790e-01
+-----------------------------------------------------------
+Epoch 45, loss=1.001, time 8.406e+02
+
+Error number = 4094
+Model performance on test data: accuracy = 5.9060e-01
+-----------------------------------------------------------
+Epoch 46, loss=0.998, time 8.592e+02
+
+Error number = 4058
+Model performance on test data: accuracy = 5.9420e-01
+-----------------------------------------------------------
+Epoch 47, loss=0.995, time 8.779e+02
+
+Error number = 4036
+Model performance on test data: accuracy = 5.9640e-01
+-----------------------------------------------------------
+Epoch 48, loss=0.992, time 8.966e+02
+
+Error number = 4015
+Model performance on test data: accuracy = 5.9850e-01
+-----------------------------------------------------------
+Epoch 49, loss=0.988, time 9.153e+02
+
+Error number = 3998
+Model performance on test data: accuracy = 6.0020e-01
+-----------------------------------------------------------
+Epoch 50, loss=0.985, time 9.339e+02
+
+Error number = 3980
+Model performance on test data: accuracy = 6.0200e-01
+-----------------------------------------------------------
+Epoch 51, loss=0.982, time 9.526e+02
+
+Error number = 3952
+Model performance on test data: accuracy = 6.0480e-01
+-----------------------------------------------------------
+Epoch 52, loss=0.978, time 9.713e+02
+
+Error number = 3920
+Model performance on test data: accuracy = 6.0800e-01
+-----------------------------------------------------------
+Epoch 53, loss=0.975, time 9.899e+02
+
+Error number = 3897
+Model performance on test data: accuracy = 6.1030e-01
+-----------------------------------------------------------
+Epoch 54, loss=0.971, time 1.009e+03
+
+Error number = 3869
+Model performance on test data: accuracy = 6.1310e-01
+-----------------------------------------------------------
+Epoch 55, loss=0.968, time 1.027e+03
+
+Error number = 3855
+Model performance on test data: accuracy = 6.1450e-01
+-----------------------------------------------------------
+Epoch 56, loss=0.964, time 1.046e+03
+
+Error number = 3832
+Model performance on test data: accuracy = 6.1680e-01
+-----------------------------------------------------------
+Epoch 57, loss=0.961, time 1.065e+03
+
+Error number = 3817
+Model performance on test data: accuracy = 6.1830e-01
+-----------------------------------------------------------
+Epoch 58, loss=0.957, time 1.083e+03
+
+Error number = 3797
+Model performance on test data: accuracy = 6.2030e-01
+-----------------------------------------------------------
+Epoch 59, loss=0.954, time 1.102e+03
+
+Error number = 3773
+Model performance on test data: accuracy = 6.2270e-01
+-----------------------------------------------------------
+Epoch 60, loss=0.950, time 1.121e+03
+
+Error number = 3745
+Model performance on test data: accuracy = 6.2550e-01
+-----------------------------------------------------------
+Epoch 61, loss=0.947, time 1.139e+03
+
+Error number = 3716
+Model performance on test data: accuracy = 6.2840e-01
+-----------------------------------------------------------
+Epoch 62, loss=0.943, time 1.158e+03
+
+Error number = 3693
+Model performance on test data: accuracy = 6.3070e-01
+-----------------------------------------------------------
+Epoch 63, loss=0.940, time 1.177e+03
+
+Error number = 3681
+Model performance on test data: accuracy = 6.3190e-01
+-----------------------------------------------------------
+Epoch 64, loss=0.937, time 1.195e+03
+
+Error number = 3652
+Model performance on test data: accuracy = 6.3480e-01
+-----------------------------------------------------------
+Epoch 65, loss=0.933, time 1.214e+03
+
+Error number = 3638
+Model performance on test data: accuracy = 6.3620e-01
+-----------------------------------------------------------
+Epoch 66, loss=0.930, time 1.233e+03
+
+Error number = 3604
+Model performance on test data: accuracy = 6.3960e-01
+-----------------------------------------------------------
+Epoch 67, loss=0.927, time 1.251e+03
+
+Error number = 3576
+Model performance on test data: accuracy = 6.4240e-01
+-----------------------------------------------------------
+Epoch 68, loss=0.924, time 1.270e+03
+
+Error number = 3555
+Model performance on test data: accuracy = 6.4450e-01
+-----------------------------------------------------------
+Epoch 69, loss=0.921, time 1.289e+03
+
+Error number = 3540
+Model performance on test data: accuracy = 6.4600e-01
+-----------------------------------------------------------
+Epoch 70, loss=0.917, time 1.307e+03
+
+Error number = 3522
+Model performance on test data: accuracy = 6.4780e-01
+-----------------------------------------------------------
+Epoch 71, loss=0.914, time 1.326e+03
+
+Error number = 3491
+Model performance on test data: accuracy = 6.5090e-01
+-----------------------------------------------------------
+Epoch 72, loss=0.911, time 1.345e+03
+
+Error number = 3470
+Model performance on test data: accuracy = 6.5300e-01
+-----------------------------------------------------------
+Epoch 73, loss=0.909, time 1.363e+03
+
+Error number = 3448
+Model performance on test data: accuracy = 6.5520e-01
+-----------------------------------------------------------
+Epoch 74, loss=0.906, time 1.382e+03
+
+Error number = 3431
+Model performance on test data: accuracy = 6.5690e-01
+-----------------------------------------------------------
+Epoch 75, loss=0.903, time 1.401e+03
+
+Error number = 3405
+Model performance on test data: accuracy = 6.5950e-01
+-----------------------------------------------------------
+Epoch 76, loss=0.900, time 1.419e+03
+
+Error number = 3389
+Model performance on test data: accuracy = 6.6110e-01
+-----------------------------------------------------------
+Epoch 77, loss=0.897, time 1.438e+03
+
+Error number = 3376
+Model performance on test data: accuracy = 6.6240e-01
+-----------------------------------------------------------
+Epoch 78, loss=0.895, time 1.457e+03
+
+Error number = 3351
+Model performance on test data: accuracy = 6.6490e-01
+-----------------------------------------------------------
+Epoch 79, loss=0.892, time 1.475e+03
+
+Error number = 3337
+Model performance on test data: accuracy = 6.6630e-01
+-----------------------------------------------------------
+Epoch 80, loss=0.889, time 1.494e+03
+
+Error number = 3318
+Model performance on test data: accuracy = 6.6820e-01
+-----------------------------------------------------------
+Epoch 81, loss=0.887, time 1.513e+03
+
+Error number = 3298
+Model performance on test data: accuracy = 6.7020e-01
+-----------------------------------------------------------
+Epoch 82, loss=0.884, time 1.531e+03
+
+Error number = 3288
+Model performance on test data: accuracy = 6.7120e-01
+-----------------------------------------------------------
+Epoch 83, loss=0.882, time 1.550e+03
+
+Error number = 3276
+Model performance on test data: accuracy = 6.7240e-01
+-----------------------------------------------------------
+Epoch 84, loss=0.880, time 1.569e+03
+
+Error number = 3270
+Model performance on test data: accuracy = 6.7300e-01
+-----------------------------------------------------------
+Epoch 85, loss=0.877, time 1.587e+03
+
+Error number = 3252
+Model performance on test data: accuracy = 6.7480e-01
+-----------------------------------------------------------
+Epoch 86, loss=0.875, time 1.606e+03
+
+Error number = 3233
+Model performance on test data: accuracy = 6.7670e-01
+-----------------------------------------------------------
+Epoch 87, loss=0.873, time 1.625e+03
+
+Error number = 3220
+Model performance on test data: accuracy = 6.7800e-01
+-----------------------------------------------------------
+Epoch 88, loss=0.870, time 1.643e+03
+
+Error number = 3201
+Model performance on test data: accuracy = 6.7990e-01
+-----------------------------------------------------------
+Epoch 89, loss=0.868, time 1.662e+03
+
+Error number = 3182
+Model performance on test data: accuracy = 6.8180e-01
+-----------------------------------------------------------
+Epoch 90, loss=0.866, time 1.681e+03
+
+Error number = 3168
+Model performance on test data: accuracy = 6.8320e-01
+-----------------------------------------------------------
+Epoch 91, loss=0.864, time 1.700e+03
+
+Error number = 3152
+Model performance on test data: accuracy = 6.8480e-01
+-----------------------------------------------------------
+Epoch 92, loss=0.862, time 1.718e+03
+
+Error number = 3145
+Model performance on test data: accuracy = 6.8550e-01
+-----------------------------------------------------------
+Epoch 93, loss=0.860, time 1.737e+03
+
+Error number = 3134
+Model performance on test data: accuracy = 6.8660e-01
+-----------------------------------------------------------
+Epoch 94, loss=0.858, time 1.756e+03
+
+Error number = 3125
+Model performance on test data: accuracy = 6.8750e-01
+-----------------------------------------------------------
+Epoch 95, loss=0.856, time 1.774e+03
+
+Error number = 3115
+Model performance on test data: accuracy = 6.8850e-01
+-----------------------------------------------------------
+Epoch 96, loss=0.854, time 1.793e+03
+
+Error number = 3102
+Model performance on test data: accuracy = 6.8980e-01
+-----------------------------------------------------------
+Epoch 97, loss=0.852, time 1.812e+03
+
+Error number = 3085
+Model performance on test data: accuracy = 6.9150e-01
+-----------------------------------------------------------
+Epoch 98, loss=0.850, time 1.830e+03
+
+Error number = 3070
+Model performance on test data: accuracy = 6.9300e-01
+-----------------------------------------------------------
+Epoch 99, loss=0.848, time 1.849e+03
+
+Error number = 3064
+Model performance on test data: accuracy = 6.9360e-01
+-----------------------------------------------------------
+Epoch 100, loss=0.846, time 1.868e+03
+
+Error number = 3052
+Model performance on test data: accuracy = 6.9480e-01
+-----------------------------------------------------------
+Epoch 101, loss=0.844, time 1.886e+03
+
+Error number = 3048
+Model performance on test data: accuracy = 6.9520e-01
+-----------------------------------------------------------
+Epoch 102, loss=0.842, time 1.905e+03
+
+Error number = 3036
+Model performance on test data: accuracy = 6.9640e-01
+-----------------------------------------------------------
+Epoch 103, loss=0.841, time 1.924e+03
+
+Error number = 3029
+Model performance on test data: accuracy = 6.9710e-01
+-----------------------------------------------------------
+Epoch 104, loss=0.839, time 1.942e+03
+
+Error number = 3014
+Model performance on test data: accuracy = 6.9860e-01
+-----------------------------------------------------------
+Epoch 105, loss=0.837, time 1.961e+03
+
+Error number = 3000
+Model performance on test data: accuracy = 7.0000e-01
+-----------------------------------------------------------
+Epoch 106, loss=0.835, time 1.980e+03
+
+Error number = 2988
+Model performance on test data: accuracy = 7.0120e-01
+-----------------------------------------------------------
+Epoch 107, loss=0.834, time 1.998e+03
+
+Error number = 2973
+Model performance on test data: accuracy = 7.0270e-01
+-----------------------------------------------------------
+Epoch 108, loss=0.832, time 2.017e+03
+
+Error number = 2953
+Model performance on test data: accuracy = 7.0470e-01
+-----------------------------------------------------------
+Epoch 109, loss=0.830, time 2.036e+03
+
+Error number = 2939
+Model performance on test data: accuracy = 7.0610e-01
+-----------------------------------------------------------
+Epoch 110, loss=0.829, time 2.054e+03
+
+Error number = 2928
+Model performance on test data: accuracy = 7.0720e-01
+-----------------------------------------------------------
+Epoch 111, loss=0.827, time 2.073e+03
+
+Error number = 2912
+Model performance on test data: accuracy = 7.0880e-01
+-----------------------------------------------------------
+Epoch 112, loss=0.825, time 2.092e+03
+
+Error number = 2911
+Model performance on test data: accuracy = 7.0890e-01
+-----------------------------------------------------------
+Epoch 113, loss=0.824, time 2.110e+03
+
+Error number = 2904
+Model performance on test data: accuracy = 7.0960e-01
+-----------------------------------------------------------
+Epoch 114, loss=0.822, time 2.129e+03
+
+Error number = 2894
+Model performance on test data: accuracy = 7.1060e-01
+-----------------------------------------------------------
+Epoch 115, loss=0.821, time 2.148e+03
+
+Error number = 2878
+Model performance on test data: accuracy = 7.1220e-01
+-----------------------------------------------------------
+Epoch 116, loss=0.819, time 2.166e+03
+
+Error number = 2863
+Model performance on test data: accuracy = 7.1370e-01
+-----------------------------------------------------------
+Epoch 117, loss=0.818, time 2.185e+03
+
+Error number = 2854
+Model performance on test data: accuracy = 7.1460e-01
+-----------------------------------------------------------
+Epoch 118, loss=0.816, time 2.204e+03
+
+Error number = 2844
+Model performance on test data: accuracy = 7.1560e-01
+-----------------------------------------------------------
+Epoch 119, loss=0.815, time 2.222e+03
+
+Error number = 2827
+Model performance on test data: accuracy = 7.1730e-01
+-----------------------------------------------------------
+Epoch 120, loss=0.813, time 2.241e+03
+
+Error number = 2817
+Model performance on test data: accuracy = 7.1830e-01
+-----------------------------------------------------------
+Epoch 121, loss=0.812, time 2.260e+03
+
+Error number = 2810
+Model performance on test data: accuracy = 7.1900e-01
+-----------------------------------------------------------
+Epoch 122, loss=0.811, time 2.278e+03
+
+Error number = 2798
+Model performance on test data: accuracy = 7.2020e-01
+-----------------------------------------------------------
+Epoch 123, loss=0.809, time 2.297e+03
+
+Error number = 2793
+Model performance on test data: accuracy = 7.2070e-01
+-----------------------------------------------------------
+Epoch 124, loss=0.808, time 2.316e+03
+
+Error number = 2783
+Model performance on test data: accuracy = 7.2170e-01
+-----------------------------------------------------------
+Epoch 125, loss=0.807, time 2.334e+03
+
+Error number = 2776
+Model performance on test data: accuracy = 7.2240e-01
+-----------------------------------------------------------
+Epoch 126, loss=0.805, time 2.353e+03
+
+Error number = 2773
+Model performance on test data: accuracy = 7.2270e-01
+-----------------------------------------------------------
+Epoch 127, loss=0.804, time 2.372e+03
+
+Error number = 2761
+Model performance on test data: accuracy = 7.2390e-01
+-----------------------------------------------------------
+Epoch 128, loss=0.803, time 2.390e+03
+
+Error number = 2751
+Model performance on test data: accuracy = 7.2490e-01
+-----------------------------------------------------------
+Epoch 129, loss=0.801, time 2.409e+03
+
+Error number = 2746
+Model performance on test data: accuracy = 7.2540e-01
+-----------------------------------------------------------
+Epoch 130, loss=0.800, time 2.428e+03
+
+Error number = 2742
+Model performance on test data: accuracy = 7.2580e-01
+-----------------------------------------------------------
+Epoch 131, loss=0.799, time 2.446e+03
+
+Error number = 2730
+Model performance on test data: accuracy = 7.2700e-01
+-----------------------------------------------------------
+Epoch 132, loss=0.798, time 2.465e+03
+
+Error number = 2710
+Model performance on test data: accuracy = 7.2900e-01
+-----------------------------------------------------------
+Epoch 133, loss=0.796, time 2.484e+03
+
+Error number = 2702
+Model performance on test data: accuracy = 7.2980e-01
+-----------------------------------------------------------
+Epoch 134, loss=0.795, time 2.503e+03
+
+Error number = 2695
+Model performance on test data: accuracy = 7.3050e-01
+-----------------------------------------------------------
+Epoch 135, loss=0.794, time 2.521e+03
+
+Error number = 2686
+Model performance on test data: accuracy = 7.3140e-01
+-----------------------------------------------------------
+Epoch 136, loss=0.793, time 2.540e+03
+
+Error number = 2673
+Model performance on test data: accuracy = 7.3270e-01
+-----------------------------------------------------------
+Epoch 137, loss=0.792, time 2.559e+03
+
+Error number = 2665
+Model performance on test data: accuracy = 7.3350e-01
+-----------------------------------------------------------
+Epoch 138, loss=0.790, time 2.577e+03
+
+Error number = 2657
+Model performance on test data: accuracy = 7.3430e-01
+-----------------------------------------------------------
+Epoch 139, loss=0.789, time 2.596e+03
+
+Error number = 2645
+Model performance on test data: accuracy = 7.3550e-01
+-----------------------------------------------------------
+Epoch 140, loss=0.788, time 2.615e+03
+
+Error number = 2638
+Model performance on test data: accuracy = 7.3620e-01
+-----------------------------------------------------------
+Epoch 141, loss=0.787, time 2.633e+03
+
+Error number = 2631
+Model performance on test data: accuracy = 7.3690e-01
+-----------------------------------------------------------
+Epoch 142, loss=0.786, time 2.652e+03
+
+Error number = 2620
+Model performance on test data: accuracy = 7.3800e-01
+-----------------------------------------------------------
+Epoch 143, loss=0.785, time 2.671e+03
+
+Error number = 2613
+Model performance on test data: accuracy = 7.3870e-01
+-----------------------------------------------------------
+Epoch 144, loss=0.784, time 2.689e+03
+
+Error number = 2597
+Model performance on test data: accuracy = 7.4030e-01
+-----------------------------------------------------------
+Epoch 145, loss=0.783, time 2.708e+03
+
+Error number = 2592
+Model performance on test data: accuracy = 7.4080e-01
+-----------------------------------------------------------
+Epoch 146, loss=0.782, time 2.727e+03
+
+Error number = 2590
+Model performance on test data: accuracy = 7.4100e-01
+-----------------------------------------------------------
+Epoch 147, loss=0.780, time 2.745e+03
+
+Error number = 2585
+Model performance on test data: accuracy = 7.4150e-01
+-----------------------------------------------------------
+Epoch 148, loss=0.779, time 2.764e+03
+
+Error number = 2573
+Model performance on test data: accuracy = 7.4270e-01
+-----------------------------------------------------------
+Epoch 149, loss=0.778, time 2.783e+03
+
+Error number = 2561
+Model performance on test data: accuracy = 7.4390e-01
+-----------------------------------------------------------
+Epoch 150, loss=0.777, time 2.801e+03
+
+Error number = 2551
+Model performance on test data: accuracy = 7.4490e-01
+-----------------------------------------------------------
+Epoch 151, loss=0.776, time 2.820e+03
+
+Error number = 2544
+Model performance on test data: accuracy = 7.4560e-01
+-----------------------------------------------------------
+Epoch 152, loss=0.775, time 2.839e+03
+
+Error number = 2534
+Model performance on test data: accuracy = 7.4660e-01
+-----------------------------------------------------------
+Epoch 153, loss=0.774, time 2.857e+03
+
+Error number = 2526
+Model performance on test data: accuracy = 7.4740e-01
+-----------------------------------------------------------
+Epoch 154, loss=0.773, time 2.876e+03
+
+Error number = 2518
+Model performance on test data: accuracy = 7.4820e-01
+-----------------------------------------------------------
+Epoch 155, loss=0.772, time 2.895e+03
+
+Error number = 2507
+Model performance on test data: accuracy = 7.4930e-01
+-----------------------------------------------------------
+Epoch 156, loss=0.772, time 2.913e+03
+
+Error number = 2498
+Model performance on test data: accuracy = 7.5020e-01
+-----------------------------------------------------------
+Epoch 157, loss=0.771, time 2.932e+03
+
+Error number = 2492
+Model performance on test data: accuracy = 7.5080e-01
+-----------------------------------------------------------
+Epoch 158, loss=0.770, time 2.951e+03
+
+Error number = 2487
+Model performance on test data: accuracy = 7.5130e-01
+-----------------------------------------------------------
+Epoch 159, loss=0.769, time 2.969e+03
+
+Error number = 2478
+Model performance on test data: accuracy = 7.5220e-01
+-----------------------------------------------------------
+Epoch 160, loss=0.768, time 2.988e+03
+
+Error number = 2475
+Model performance on test data: accuracy = 7.5250e-01
+-----------------------------------------------------------
+Epoch 161, loss=0.767, time 3.007e+03
+
+Error number = 2462
+Model performance on test data: accuracy = 7.5380e-01
+-----------------------------------------------------------
+Epoch 162, loss=0.766, time 3.025e+03
+
+Error number = 2453
+Model performance on test data: accuracy = 7.5470e-01
+-----------------------------------------------------------
+Epoch 163, loss=0.765, time 3.044e+03
+
+Error number = 2444
+Model performance on test data: accuracy = 7.5560e-01
+-----------------------------------------------------------
+Epoch 164, loss=0.764, time 3.063e+03
+
+Error number = 2434
+Model performance on test data: accuracy = 7.5660e-01
+-----------------------------------------------------------
+Epoch 165, loss=0.763, time 3.081e+03
+
+Error number = 2432
+Model performance on test data: accuracy = 7.5680e-01
+-----------------------------------------------------------
+Epoch 166, loss=0.762, time 3.100e+03
+
+Error number = 2430
+Model performance on test data: accuracy = 7.5700e-01
+-----------------------------------------------------------
+Epoch 167, loss=0.762, time 3.119e+03
+
+Error number = 2422
+Model performance on test data: accuracy = 7.5780e-01
+-----------------------------------------------------------
+Epoch 168, loss=0.761, time 3.138e+03
+
+Error number = 2417
+Model performance on test data: accuracy = 7.5830e-01
+-----------------------------------------------------------
+Epoch 169, loss=0.760, time 3.156e+03
+
+Error number = 2410
+Model performance on test data: accuracy = 7.5900e-01
+-----------------------------------------------------------
+Epoch 170, loss=0.759, time 3.175e+03
+
+Error number = 2399
+Model performance on test data: accuracy = 7.6010e-01
+-----------------------------------------------------------
+Epoch 171, loss=0.758, time 3.194e+03
+
+Error number = 2392
+Model performance on test data: accuracy = 7.6080e-01
+-----------------------------------------------------------
+Epoch 172, loss=0.757, time 3.212e+03
+
+Error number = 2386
+Model performance on test data: accuracy = 7.6140e-01
+-----------------------------------------------------------
+Epoch 173, loss=0.757, time 3.231e+03
+
+Error number = 2378
+Model performance on test data: accuracy = 7.6220e-01
+-----------------------------------------------------------
+Epoch 174, loss=0.756, time 3.250e+03
+
+Error number = 2369
+Model performance on test data: accuracy = 7.6310e-01
+-----------------------------------------------------------
+Epoch 175, loss=0.755, time 3.268e+03
+
+Error number = 2362
+Model performance on test data: accuracy = 7.6380e-01
+-----------------------------------------------------------
+Epoch 176, loss=0.754, time 3.287e+03
+
+Error number = 2352
+Model performance on test data: accuracy = 7.6480e-01
+-----------------------------------------------------------
+Epoch 177, loss=0.753, time 3.306e+03
+
+Error number = 2345
+Model performance on test data: accuracy = 7.6550e-01
+-----------------------------------------------------------
+Epoch 178, loss=0.753, time 3.324e+03
+
+Error number = 2337
+Model performance on test data: accuracy = 7.6630e-01
+-----------------------------------------------------------
+Epoch 179, loss=0.752, time 3.343e+03
+
+Error number = 2335
+Model performance on test data: accuracy = 7.6650e-01
+-----------------------------------------------------------
+Epoch 180, loss=0.751, time 3.362e+03
+
+Error number = 2332
+Model performance on test data: accuracy = 7.6680e-01
+-----------------------------------------------------------
+Epoch 181, loss=0.750, time 3.380e+03
+
+Error number = 2322
+Model performance on test data: accuracy = 7.6780e-01
+-----------------------------------------------------------
+Epoch 182, loss=0.750, time 3.399e+03
+
+Error number = 2318
+Model performance on test data: accuracy = 7.6820e-01
+-----------------------------------------------------------
+Epoch 183, loss=0.749, time 3.418e+03
+
+Error number = 2312
+Model performance on test data: accuracy = 7.6880e-01
+-----------------------------------------------------------
+Epoch 184, loss=0.748, time 3.436e+03
+
+Error number = 2305
+Model performance on test data: accuracy = 7.6950e-01
+-----------------------------------------------------------
+Epoch 185, loss=0.747, time 3.455e+03
+
+Error number = 2302
+Model performance on test data: accuracy = 7.6980e-01
+-----------------------------------------------------------
+Epoch 186, loss=0.747, time 3.474e+03
+
+Error number = 2299
+Model performance on test data: accuracy = 7.7010e-01
+-----------------------------------------------------------
+Epoch 187, loss=0.746, time 3.492e+03
+
+Error number = 2294
+Model performance on test data: accuracy = 7.7060e-01
+-----------------------------------------------------------
+Epoch 188, loss=0.745, time 3.511e+03
+
+Error number = 2293
+Model performance on test data: accuracy = 7.7070e-01
+-----------------------------------------------------------
+Epoch 189, loss=0.745, time 3.530e+03
+
+Error number = 2289
+Model performance on test data: accuracy = 7.7110e-01
+-----------------------------------------------------------
+Epoch 190, loss=0.744, time 3.548e+03
+
+Error number = 2281
+Model performance on test data: accuracy = 7.7190e-01
+-----------------------------------------------------------
+Epoch 191, loss=0.743, time 3.567e+03
+
+Error number = 2275
+Model performance on test data: accuracy = 7.7250e-01
+-----------------------------------------------------------
+Epoch 192, loss=0.742, time 3.586e+03
+
+Error number = 2271
+Model performance on test data: accuracy = 7.7290e-01
+-----------------------------------------------------------
+Epoch 193, loss=0.742, time 3.604e+03
+
+Error number = 2264
+Model performance on test data: accuracy = 7.7360e-01
+-----------------------------------------------------------
+Epoch 194, loss=0.741, time 3.623e+03
+
+Error number = 2260
+Model performance on test data: accuracy = 7.7400e-01
+-----------------------------------------------------------
+Epoch 195, loss=0.740, time 3.642e+03
+
+Error number = 2253
+Model performance on test data: accuracy = 7.7470e-01
+-----------------------------------------------------------
+Epoch 196, loss=0.740, time 3.660e+03
+
+Error number = 2251
+Model performance on test data: accuracy = 7.7490e-01
+-----------------------------------------------------------
+Epoch 197, loss=0.739, time 3.679e+03
+
+Error number = 2249
+Model performance on test data: accuracy = 7.7510e-01
+-----------------------------------------------------------
+Epoch 198, loss=0.738, time 3.698e+03
+
+Error number = 2245
+Model performance on test data: accuracy = 7.7550e-01
+-----------------------------------------------------------
+Epoch 199, loss=0.738, time 3.716e+03
+
+Error number = 2244
+Model performance on test data: accuracy = 7.7560e-01
+-----------------------------------------------------------
+Epoch 200, loss=0.737, time 3.735e+03
+
+Error number = 2240
+Model performance on test data: accuracy = 7.7600e-01
+-----------------------------------------------------------
+Epoch 201, loss=0.737, time 3.754e+03
+
+Error number = 2236
+Model performance on test data: accuracy = 7.7640e-01
+-----------------------------------------------------------
+Epoch 202, loss=0.736, time 3.772e+03
+
+Error number = 2230
+Model performance on test data: accuracy = 7.7700e-01
+-----------------------------------------------------------
+Epoch 203, loss=0.735, time 3.791e+03
+
+Error number = 2228
+Model performance on test data: accuracy = 7.7720e-01
+-----------------------------------------------------------
+Epoch 204, loss=0.735, time 3.810e+03
+
+Error number = 2221
+Model performance on test data: accuracy = 7.7790e-01
+-----------------------------------------------------------
+Epoch 205, loss=0.734, time 3.828e+03
+
+Error number = 2213
+Model performance on test data: accuracy = 7.7870e-01
+-----------------------------------------------------------
+Epoch 206, loss=0.733, time 3.847e+03
+
+Error number = 2204
+Model performance on test data: accuracy = 7.7960e-01
+-----------------------------------------------------------
+Epoch 207, loss=0.733, time 3.866e+03
+
+Error number = 2202
+Model performance on test data: accuracy = 7.7980e-01
+-----------------------------------------------------------
+Epoch 208, loss=0.732, time 3.884e+03
+
+Error number = 2198
+Model performance on test data: accuracy = 7.8020e-01
+-----------------------------------------------------------
+Epoch 209, loss=0.732, time 3.903e+03
+
+Error number = 2197
+Model performance on test data: accuracy = 7.8030e-01
+-----------------------------------------------------------
+Epoch 210, loss=0.731, time 3.922e+03
+
+Error number = 2196
+Model performance on test data: accuracy = 7.8040e-01
+-----------------------------------------------------------
+Epoch 211, loss=0.730, time 3.940e+03
+
+Error number = 2192
+Model performance on test data: accuracy = 7.8080e-01
+-----------------------------------------------------------
+Epoch 212, loss=0.730, time 3.959e+03
+
+Error number = 2191
+Model performance on test data: accuracy = 7.8090e-01
+-----------------------------------------------------------
+Epoch 213, loss=0.729, time 3.978e+03
+
+Error number = 2189
+Model performance on test data: accuracy = 7.8110e-01
+-----------------------------------------------------------
+Epoch 214, loss=0.729, time 3.997e+03
+
+Error number = 2184
+Model performance on test data: accuracy = 7.8160e-01
+-----------------------------------------------------------
+Epoch 215, loss=0.728, time 4.015e+03
+
+Error number = 2181
+Model performance on test data: accuracy = 7.8190e-01
+-----------------------------------------------------------
+Epoch 216, loss=0.728, time 4.034e+03
+
+Error number = 2177
+Model performance on test data: accuracy = 7.8230e-01
+-----------------------------------------------------------
+Epoch 217, loss=0.727, time 4.053e+03
+
+Error number = 2174
+Model performance on test data: accuracy = 7.8260e-01
+-----------------------------------------------------------
+Epoch 218, loss=0.726, time 4.071e+03
+
+Error number = 2166
+Model performance on test data: accuracy = 7.8340e-01
+-----------------------------------------------------------
+Epoch 219, loss=0.726, time 4.090e+03
+
+Error number = 2162
+Model performance on test data: accuracy = 7.8380e-01
+-----------------------------------------------------------
+Epoch 220, loss=0.725, time 4.109e+03
+
+Error number = 2158
+Model performance on test data: accuracy = 7.8420e-01
+-----------------------------------------------------------
+Epoch 221, loss=0.725, time 4.127e+03
+
+Error number = 2154
+Model performance on test data: accuracy = 7.8460e-01
+-----------------------------------------------------------
+Epoch 222, loss=0.724, time 4.146e+03
+
+Error number = 2149
+Model performance on test data: accuracy = 7.8510e-01
+-----------------------------------------------------------
+Epoch 223, loss=0.724, time 4.165e+03
+
+Error number = 2142
+Model performance on test data: accuracy = 7.8580e-01
+-----------------------------------------------------------
+Epoch 224, loss=0.723, time 4.183e+03
+
+Error number = 2137
+Model performance on test data: accuracy = 7.8630e-01
+-----------------------------------------------------------
+Epoch 225, loss=0.723, time 4.202e+03
+
+Error number = 2134
+Model performance on test data: accuracy = 7.8660e-01
+-----------------------------------------------------------
+Epoch 226, loss=0.722, time 4.221e+03
+
+Error number = 2129
+Model performance on test data: accuracy = 7.8710e-01
+-----------------------------------------------------------
+Epoch 227, loss=0.721, time 4.239e+03
+
+Error number = 2129
+Model performance on test data: accuracy = 7.8710e-01
+-----------------------------------------------------------
+Epoch 228, loss=0.721, time 4.258e+03
+
+Error number = 2125
+Model performance on test data: accuracy = 7.8750e-01
+-----------------------------------------------------------
+Epoch 229, loss=0.720, time 4.277e+03
+
+Error number = 2122
+Model performance on test data: accuracy = 7.8780e-01
+-----------------------------------------------------------
+Epoch 230, loss=0.720, time 4.295e+03
+
+Error number = 2117
+Model performance on test data: accuracy = 7.8830e-01
+-----------------------------------------------------------
+Epoch 231, loss=0.719, time 4.314e+03
+
+Error number = 2112
+Model performance on test data: accuracy = 7.8880e-01
+-----------------------------------------------------------
+Epoch 232, loss=0.719, time 4.333e+03
+
+Error number = 2108
+Model performance on test data: accuracy = 7.8920e-01
+-----------------------------------------------------------
+Epoch 233, loss=0.718, time 4.351e+03
+
+Error number = 2103
+Model performance on test data: accuracy = 7.8970e-01
+-----------------------------------------------------------
+Epoch 234, loss=0.718, time 4.370e+03
+
+Error number = 2099
+Model performance on test data: accuracy = 7.9010e-01
+-----------------------------------------------------------
+Epoch 235, loss=0.717, time 4.389e+03
+
+Error number = 2093
+Model performance on test data: accuracy = 7.9070e-01
+-----------------------------------------------------------
+Epoch 236, loss=0.717, time 4.407e+03
+
+Error number = 2090
+Model performance on test data: accuracy = 7.9100e-01
+-----------------------------------------------------------
+Epoch 237, loss=0.716, time 4.426e+03
+
+Error number = 2087
+Model performance on test data: accuracy = 7.9130e-01
+-----------------------------------------------------------
+Epoch 238, loss=0.716, time 4.445e+03
+
+Error number = 2084
+Model performance on test data: accuracy = 7.9160e-01
+-----------------------------------------------------------
+Epoch 239, loss=0.715, time 4.463e+03
+
+Error number = 2079
+Model performance on test data: accuracy = 7.9210e-01
+-----------------------------------------------------------
+Epoch 240, loss=0.715, time 4.482e+03
+
+Error number = 2072
+Model performance on test data: accuracy = 7.9280e-01
+-----------------------------------------------------------
+Epoch 241, loss=0.714, time 4.501e+03
+
+Error number = 2071
+Model performance on test data: accuracy = 7.9290e-01
+-----------------------------------------------------------
+Epoch 242, loss=0.714, time 4.519e+03
+
+Error number = 2062
+Model performance on test data: accuracy = 7.9380e-01
+-----------------------------------------------------------
+Epoch 243, loss=0.714, time 4.538e+03
+
+Error number = 2058
+Model performance on test data: accuracy = 7.9420e-01
+-----------------------------------------------------------
+Epoch 244, loss=0.713, time 4.557e+03
+
+Error number = 2056
+Model performance on test data: accuracy = 7.9440e-01
+-----------------------------------------------------------
+Epoch 245, loss=0.713, time 4.575e+03
+
+Error number = 2058
+Model performance on test data: accuracy = 7.9420e-01
+-----------------------------------------------------------
+Epoch 246, loss=0.712, time 4.594e+03
+
+Error number = 2057
+Model performance on test data: accuracy = 7.9430e-01
+-----------------------------------------------------------
+Epoch 247, loss=0.712, time 4.613e+03
+
+Error number = 2056
+Model performance on test data: accuracy = 7.9440e-01
+-----------------------------------------------------------
+Epoch 248, loss=0.711, time 4.631e+03
+
+Error number = 2051
+Model performance on test data: accuracy = 7.9490e-01
+-----------------------------------------------------------
+Epoch 249, loss=0.711, time 4.650e+03
+
+Error number = 2045
+Model performance on test data: accuracy = 7.9550e-01
+-----------------------------------------------------------
+Epoch 250, loss=0.710, time 4.669e+03
+
+Error number = 2047
+Model performance on test data: accuracy = 7.9530e-01
+-----------------------------------------------------------
+Epoch 251, loss=0.710, time 4.688e+03
+
+Error number = 2046
+Model performance on test data: accuracy = 7.9540e-01
+-----------------------------------------------------------
+Epoch 252, loss=0.709, time 4.706e+03
+
+Error number = 2037
+Model performance on test data: accuracy = 7.9630e-01
+-----------------------------------------------------------
+Epoch 253, loss=0.709, time 4.725e+03
+
+Error number = 2035
+Model performance on test data: accuracy = 7.9650e-01
+-----------------------------------------------------------
+Epoch 254, loss=0.709, time 4.744e+03
+
+Error number = 2033
+Model performance on test data: accuracy = 7.9670e-01
+-----------------------------------------------------------
+Epoch 255, loss=0.708, time 4.762e+03
+
+Error number = 2028
+Model performance on test data: accuracy = 7.9720e-01
+-----------------------------------------------------------
+Epoch 256, loss=0.708, time 4.781e+03
+
+Error number = 2019
+Model performance on test data: accuracy = 7.9810e-01
+-----------------------------------------------------------
+Epoch 257, loss=0.707, time 4.800e+03
+
+Error number = 2017
+Model performance on test data: accuracy = 7.9830e-01
+-----------------------------------------------------------
+Epoch 258, loss=0.707, time 4.819e+03
+
+Error number = 2015
+Model performance on test data: accuracy = 7.9850e-01
+-----------------------------------------------------------
+Epoch 259, loss=0.706, time 4.837e+03
+
+Error number = 2010
+Model performance on test data: accuracy = 7.9900e-01
+-----------------------------------------------------------
+Epoch 260, loss=0.706, time 4.856e+03
+
+Error number = 2012
+Model performance on test data: accuracy = 7.9880e-01
+-----------------------------------------------------------
+Epoch 261, loss=0.706, time 4.875e+03
+
+Error number = 2011
+Model performance on test data: accuracy = 7.9890e-01
+-----------------------------------------------------------
+Epoch 262, loss=0.705, time 4.893e+03
+
+Error number = 2009
+Model performance on test data: accuracy = 7.9910e-01
+-----------------------------------------------------------
+Epoch 263, loss=0.705, time 4.912e+03
+
+Error number = 2007
+Model performance on test data: accuracy = 7.9930e-01
+-----------------------------------------------------------
+Epoch 264, loss=0.704, time 4.931e+03
+
+Error number = 2006
+Model performance on test data: accuracy = 7.9940e-01
+-----------------------------------------------------------
+Epoch 265, loss=0.704, time 4.950e+03
+
+Error number = 2000
+Model performance on test data: accuracy = 8.0000e-01
+-----------------------------------------------------------
+Epoch 266, loss=0.703, time 4.968e+03
+
+Error number = 2001
+Model performance on test data: accuracy = 7.9990e-01
+-----------------------------------------------------------
+Epoch 267, loss=0.703, time 4.987e+03
+
+Error number = 1998
+Model performance on test data: accuracy = 8.0020e-01
+-----------------------------------------------------------
+Epoch 268, loss=0.703, time 5.006e+03
+
+Error number = 1997
+Model performance on test data: accuracy = 8.0030e-01
+-----------------------------------------------------------
+Epoch 269, loss=0.702, time 5.024e+03
+
+Error number = 1996
+Model performance on test data: accuracy = 8.0040e-01
+-----------------------------------------------------------
+Epoch 270, loss=0.702, time 5.043e+03
+
+Error number = 1992
+Model performance on test data: accuracy = 8.0080e-01
+-----------------------------------------------------------
+Epoch 271, loss=0.702, time 5.062e+03
+
+Error number = 1989
+Model performance on test data: accuracy = 8.0110e-01
+-----------------------------------------------------------
+Epoch 272, loss=0.701, time 5.080e+03
+
+Error number = 1988
+Model performance on test data: accuracy = 8.0120e-01
+-----------------------------------------------------------
+Epoch 273, loss=0.701, time 5.099e+03
+
+Error number = 1986
+Model performance on test data: accuracy = 8.0140e-01
+-----------------------------------------------------------
+Epoch 274, loss=0.700, time 5.118e+03
+
+Error number = 1983
+Model performance on test data: accuracy = 8.0170e-01
+-----------------------------------------------------------
+Epoch 275, loss=0.700, time 5.137e+03
+
+Error number = 1980
+Model performance on test data: accuracy = 8.0200e-01
+-----------------------------------------------------------
+Epoch 276, loss=0.700, time 5.155e+03
+
+Error number = 1975
+Model performance on test data: accuracy = 8.0250e-01
+-----------------------------------------------------------
+Epoch 277, loss=0.699, time 5.174e+03
+
+Error number = 1975
+Model performance on test data: accuracy = 8.0250e-01
+-----------------------------------------------------------
+Epoch 278, loss=0.699, time 5.193e+03
+
+Error number = 1971
+Model performance on test data: accuracy = 8.0290e-01
+-----------------------------------------------------------
+Epoch 279, loss=0.698, time 5.211e+03
+
+Error number = 1974
+Model performance on test data: accuracy = 8.0260e-01
+-----------------------------------------------------------
+Epoch 280, loss=0.698, time 5.230e+03
+
+Error number = 1973
+Model performance on test data: accuracy = 8.0270e-01
+-----------------------------------------------------------
+Epoch 281, loss=0.698, time 5.249e+03
+
+Error number = 1967
+Model performance on test data: accuracy = 8.0330e-01
+-----------------------------------------------------------
+Epoch 282, loss=0.697, time 5.268e+03
+
+Error number = 1967
+Model performance on test data: accuracy = 8.0330e-01
+-----------------------------------------------------------
+Epoch 283, loss=0.697, time 5.286e+03
+
+Error number = 1965
+Model performance on test data: accuracy = 8.0350e-01
+-----------------------------------------------------------
+Epoch 284, loss=0.697, time 5.305e+03
+
+Error number = 1963
+Model performance on test data: accuracy = 8.0370e-01
+-----------------------------------------------------------
+Epoch 285, loss=0.696, time 5.324e+03
+
+Error number = 1961
+Model performance on test data: accuracy = 8.0390e-01
+-----------------------------------------------------------
+Epoch 286, loss=0.696, time 5.342e+03
+
+Error number = 1958
+Model performance on test data: accuracy = 8.0420e-01
+-----------------------------------------------------------
+Epoch 287, loss=0.696, time 5.361e+03
+
+Error number = 1955
+Model performance on test data: accuracy = 8.0450e-01
+-----------------------------------------------------------
+Epoch 288, loss=0.695, time 5.380e+03
+
+Error number = 1950
+Model performance on test data: accuracy = 8.0500e-01
+-----------------------------------------------------------
+Epoch 289, loss=0.695, time 5.399e+03
+
+Error number = 1946
+Model performance on test data: accuracy = 8.0540e-01
+-----------------------------------------------------------
+Epoch 290, loss=0.695, time 5.417e+03
+
+Error number = 1942
+Model performance on test data: accuracy = 8.0580e-01
+-----------------------------------------------------------
+Epoch 291, loss=0.694, time 5.436e+03
+
+Error number = 1944
+Model performance on test data: accuracy = 8.0560e-01
+-----------------------------------------------------------
+Epoch 292, loss=0.694, time 5.455e+03
+
+Error number = 1941
+Model performance on test data: accuracy = 8.0590e-01
+-----------------------------------------------------------
+Epoch 293, loss=0.693, time 5.473e+03
+
+Error number = 1936
+Model performance on test data: accuracy = 8.0640e-01
+-----------------------------------------------------------
+Epoch 294, loss=0.693, time 5.492e+03
+
+Error number = 1930
+Model performance on test data: accuracy = 8.0700e-01
+-----------------------------------------------------------
+Epoch 295, loss=0.693, time 5.511e+03
+
+Error number = 1924
+Model performance on test data: accuracy = 8.0760e-01
+-----------------------------------------------------------
+Epoch 296, loss=0.692, time 5.529e+03
+
+Error number = 1925
+Model performance on test data: accuracy = 8.0750e-01
+-----------------------------------------------------------
+Epoch 297, loss=0.692, time 5.548e+03
+
+Error number = 1925
+Model performance on test data: accuracy = 8.0750e-01
+-----------------------------------------------------------
+Epoch 298, loss=0.692, time 5.567e+03
+
+Error number = 1923
+Model performance on test data: accuracy = 8.0770e-01
+-----------------------------------------------------------
+Epoch 299, loss=0.691, time 5.586e+03
+
+Error number = 1920
+Model performance on test data: accuracy = 8.0800e-01
+-----------------------------------------------------------
+Epoch 300, loss=0.691, time 5.604e+03
+
+Error number = 1917
+Model performance on test data: accuracy = 8.0830e-01
+-----------------------------------------------------------
+Epoch 301, loss=0.691, time 5.623e+03
+
+Error number = 1914
+Model performance on test data: accuracy = 8.0860e-01
+-----------------------------------------------------------
+Epoch 302, loss=0.690, time 5.642e+03
+
+Error number = 1911
+Model performance on test data: accuracy = 8.0890e-01
+-----------------------------------------------------------
+Epoch 303, loss=0.690, time 5.660e+03
+
+Error number = 1907
+Model performance on test data: accuracy = 8.0930e-01
+-----------------------------------------------------------
+Epoch 304, loss=0.690, time 5.679e+03
+
+Error number = 1905
+Model performance on test data: accuracy = 8.0950e-01
+-----------------------------------------------------------
+Epoch 305, loss=0.689, time 5.698e+03
+
+Error number = 1904
+Model performance on test data: accuracy = 8.0960e-01
+-----------------------------------------------------------
+Epoch 306, loss=0.689, time 5.717e+03
+
+Error number = 1898
+Model performance on test data: accuracy = 8.1020e-01
+-----------------------------------------------------------
+Epoch 307, loss=0.689, time 5.735e+03
+
+Error number = 1897
+Model performance on test data: accuracy = 8.1030e-01
+-----------------------------------------------------------
+Epoch 308, loss=0.688, time 5.754e+03
+
+Error number = 1894
+Model performance on test data: accuracy = 8.1060e-01
+-----------------------------------------------------------
+Epoch 309, loss=0.688, time 5.773e+03
+
+Error number = 1895
+Model performance on test data: accuracy = 8.1050e-01
+-----------------------------------------------------------
+Epoch 310, loss=0.688, time 5.791e+03
+
+Error number = 1895
+Model performance on test data: accuracy = 8.1050e-01
+-----------------------------------------------------------
+Epoch 311, loss=0.688, time 5.810e+03
+
+Error number = 1891
+Model performance on test data: accuracy = 8.1090e-01
+-----------------------------------------------------------
+Epoch 312, loss=0.687, time 5.829e+03
+
+Error number = 1889
+Model performance on test data: accuracy = 8.1110e-01
+-----------------------------------------------------------
+Epoch 313, loss=0.687, time 5.848e+03
+
+Error number = 1883
+Model performance on test data: accuracy = 8.1170e-01
+-----------------------------------------------------------
+Epoch 314, loss=0.687, time 5.866e+03
+
+Error number = 1884
+Model performance on test data: accuracy = 8.1160e-01
+-----------------------------------------------------------
+Epoch 315, loss=0.686, time 5.885e+03
+
+Error number = 1884
+Model performance on test data: accuracy = 8.1160e-01
+-----------------------------------------------------------
+Epoch 316, loss=0.686, time 5.904e+03
+
+Error number = 1885
+Model performance on test data: accuracy = 8.1150e-01
+-----------------------------------------------------------
+Epoch 317, loss=0.686, time 5.922e+03
+
+Error number = 1888
+Model performance on test data: accuracy = 8.1120e-01
+-----------------------------------------------------------
+Epoch 318, loss=0.685, time 5.941e+03
+
+Error number = 1886
+Model performance on test data: accuracy = 8.1140e-01
+-----------------------------------------------------------
+Epoch 319, loss=0.685, time 5.960e+03
+
+Error number = 1888
+Model performance on test data: accuracy = 8.1120e-01
+-----------------------------------------------------------
+Epoch 320, loss=0.685, time 5.978e+03
+
+Error number = 1888
+Model performance on test data: accuracy = 8.1120e-01
+-----------------------------------------------------------
+Epoch 321, loss=0.684, time 5.997e+03
+
+Error number = 1883
+Model performance on test data: accuracy = 8.1170e-01
+-----------------------------------------------------------
+Epoch 322, loss=0.684, time 6.016e+03
+
+Error number = 1879
+Model performance on test data: accuracy = 8.1210e-01
+-----------------------------------------------------------
+Epoch 323, loss=0.684, time 6.035e+03
+
+Error number = 1877
+Model performance on test data: accuracy = 8.1230e-01
+-----------------------------------------------------------
+Epoch 324, loss=0.683, time 6.053e+03
+
+Error number = 1876
+Model performance on test data: accuracy = 8.1240e-01
+-----------------------------------------------------------
+Epoch 325, loss=0.683, time 6.072e+03
+
+Error number = 1875
+Model performance on test data: accuracy = 8.1250e-01
+-----------------------------------------------------------
+Epoch 326, loss=0.683, time 6.091e+03
+
+Error number = 1869
+Model performance on test data: accuracy = 8.1310e-01
+-----------------------------------------------------------
+Epoch 327, loss=0.683, time 6.109e+03
+
+Error number = 1865
+Model performance on test data: accuracy = 8.1350e-01
+-----------------------------------------------------------
+Epoch 328, loss=0.682, time 6.128e+03
+
+Error number = 1861
+Model performance on test data: accuracy = 8.1390e-01
+-----------------------------------------------------------
+Epoch 329, loss=0.682, time 6.147e+03
+
+Error number = 1862
+Model performance on test data: accuracy = 8.1380e-01
+-----------------------------------------------------------
+Epoch 330, loss=0.682, time 6.166e+03
+
+Error number = 1860
+Model performance on test data: accuracy = 8.1400e-01
+-----------------------------------------------------------
+Epoch 331, loss=0.681, time 6.184e+03
+
+Error number = 1856
+Model performance on test data: accuracy = 8.1440e-01
+-----------------------------------------------------------
+Epoch 332, loss=0.681, time 6.203e+03
+
+Error number = 1857
+Model performance on test data: accuracy = 8.1430e-01
+-----------------------------------------------------------
+Epoch 333, loss=0.681, time 6.222e+03
+
+Error number = 1855
+Model performance on test data: accuracy = 8.1450e-01
+-----------------------------------------------------------
+Epoch 334, loss=0.681, time 6.240e+03
+
+Error number = 1855
+Model performance on test data: accuracy = 8.1450e-01
+-----------------------------------------------------------
+Epoch 335, loss=0.680, time 6.259e+03
+
+Error number = 1853
+Model performance on test data: accuracy = 8.1470e-01
+-----------------------------------------------------------
+Epoch 336, loss=0.680, time 6.278e+03
+
+Error number = 1852
+Model performance on test data: accuracy = 8.1480e-01
+-----------------------------------------------------------
+Epoch 337, loss=0.680, time 6.297e+03
+
+Error number = 1851
+Model performance on test data: accuracy = 8.1490e-01
+-----------------------------------------------------------
+Epoch 338, loss=0.679, time 6.315e+03
+
+Error number = 1849
+Model performance on test data: accuracy = 8.1510e-01
+-----------------------------------------------------------
+Epoch 339, loss=0.679, time 6.334e+03
+
+Error number = 1844
+Model performance on test data: accuracy = 8.1560e-01
+-----------------------------------------------------------
+Epoch 340, loss=0.679, time 6.353e+03
+
+Error number = 1842
+Model performance on test data: accuracy = 8.1580e-01
+-----------------------------------------------------------
+Epoch 341, loss=0.678, time 6.371e+03
+
+Error number = 1840
+Model performance on test data: accuracy = 8.1600e-01
+-----------------------------------------------------------
+Epoch 342, loss=0.678, time 6.390e+03
+
+Error number = 1838
+Model performance on test data: accuracy = 8.1620e-01
+-----------------------------------------------------------
+Epoch 343, loss=0.678, time 6.409e+03
+
+Error number = 1836
+Model performance on test data: accuracy = 8.1640e-01
+-----------------------------------------------------------
+Epoch 344, loss=0.678, time 6.427e+03
+
+Error number = 1835
+Model performance on test data: accuracy = 8.1650e-01
+-----------------------------------------------------------
+Epoch 345, loss=0.677, time 6.446e+03
+
+Error number = 1830
+Model performance on test data: accuracy = 8.1700e-01
+-----------------------------------------------------------
+Epoch 346, loss=0.677, time 6.465e+03
+
+Error number = 1829
+Model performance on test data: accuracy = 8.1710e-01
+-----------------------------------------------------------
+Epoch 347, loss=0.677, time 6.483e+03
+
+Error number = 1824
+Model performance on test data: accuracy = 8.1760e-01
+-----------------------------------------------------------
+Epoch 348, loss=0.676, time 6.502e+03
+
+Error number = 1820
+Model performance on test data: accuracy = 8.1800e-01
+-----------------------------------------------------------
+Epoch 349, loss=0.676, time 6.521e+03
+
+Error number = 1816
+Model performance on test data: accuracy = 8.1840e-01
+-----------------------------------------------------------
+Epoch 350, loss=0.676, time 6.540e+03
+
+Error number = 1815
+Model performance on test data: accuracy = 8.1850e-01
+-----------------------------------------------------------
+Epoch 351, loss=0.676, time 6.558e+03
+
+Error number = 1812
+Model performance on test data: accuracy = 8.1880e-01
+-----------------------------------------------------------
+Epoch 352, loss=0.675, time 6.577e+03
+
+Error number = 1808
+Model performance on test data: accuracy = 8.1920e-01
+-----------------------------------------------------------
+Epoch 353, loss=0.675, time 6.596e+03
+
+Error number = 1806
+Model performance on test data: accuracy = 8.1940e-01
+-----------------------------------------------------------
+Epoch 354, loss=0.675, time 6.614e+03
+
+Error number = 1802
+Model performance on test data: accuracy = 8.1980e-01
+-----------------------------------------------------------
+Epoch 355, loss=0.674, time 6.633e+03
+
+Error number = 1798
+Model performance on test data: accuracy = 8.2020e-01
+-----------------------------------------------------------
+Epoch 356, loss=0.674, time 6.652e+03
+
+Error number = 1796
+Model performance on test data: accuracy = 8.2040e-01
+-----------------------------------------------------------
+Epoch 357, loss=0.674, time 6.671e+03
+
+Error number = 1794
+Model performance on test data: accuracy = 8.2060e-01
+-----------------------------------------------------------
+Epoch 358, loss=0.674, time 6.689e+03
+
+Error number = 1790
+Model performance on test data: accuracy = 8.2100e-01
+-----------------------------------------------------------
+Epoch 359, loss=0.673, time 6.708e+03
+
+Error number = 1786
+Model performance on test data: accuracy = 8.2140e-01
+-----------------------------------------------------------
+Epoch 360, loss=0.673, time 6.727e+03
+
+Error number = 1789
+Model performance on test data: accuracy = 8.2110e-01
+-----------------------------------------------------------
+Epoch 361, loss=0.673, time 6.745e+03
+
+Error number = 1786
+Model performance on test data: accuracy = 8.2140e-01
+-----------------------------------------------------------
+Epoch 362, loss=0.673, time 6.764e+03
+
+Error number = 1788
+Model performance on test data: accuracy = 8.2120e-01
+-----------------------------------------------------------
+Epoch 363, loss=0.672, time 6.783e+03
+
+Error number = 1787
+Model performance on test data: accuracy = 8.2130e-01
+-----------------------------------------------------------
+Epoch 364, loss=0.672, time 6.801e+03
+
+Error number = 1786
+Model performance on test data: accuracy = 8.2140e-01
+-----------------------------------------------------------
+Epoch 365, loss=0.672, time 6.820e+03
+
+Error number = 1786
+Model performance on test data: accuracy = 8.2140e-01
+-----------------------------------------------------------
+Epoch 366, loss=0.671, time 6.839e+03
+
+Error number = 1784
+Model performance on test data: accuracy = 8.2160e-01
+-----------------------------------------------------------
+Epoch 367, loss=0.671, time 6.858e+03
+
+Error number = 1779
+Model performance on test data: accuracy = 8.2210e-01
+-----------------------------------------------------------
+Epoch 368, loss=0.671, time 6.876e+03
+
+Error number = 1777
+Model performance on test data: accuracy = 8.2230e-01
+-----------------------------------------------------------
+Epoch 369, loss=0.671, time 6.895e+03
+
+Error number = 1773
+Model performance on test data: accuracy = 8.2270e-01
+-----------------------------------------------------------
+Epoch 370, loss=0.670, time 6.914e+03
+
+Error number = 1773
+Model performance on test data: accuracy = 8.2270e-01
+-----------------------------------------------------------
+Epoch 371, loss=0.670, time 6.932e+03
+
+Error number = 1769
+Model performance on test data: accuracy = 8.2310e-01
+-----------------------------------------------------------
+Epoch 372, loss=0.670, time 6.951e+03
+
+Error number = 1765
+Model performance on test data: accuracy = 8.2350e-01
+-----------------------------------------------------------
+Epoch 373, loss=0.670, time 6.970e+03
+
+Error number = 1764
+Model performance on test data: accuracy = 8.2360e-01
+-----------------------------------------------------------
+Epoch 374, loss=0.669, time 6.989e+03
+
+Error number = 1765
+Model performance on test data: accuracy = 8.2350e-01
+-----------------------------------------------------------
+Epoch 375, loss=0.669, time 7.007e+03
+
+Error number = 1763
+Model performance on test data: accuracy = 8.2370e-01
+-----------------------------------------------------------
+Epoch 376, loss=0.669, time 7.026e+03
+
+Error number = 1763
+Model performance on test data: accuracy = 8.2370e-01
+-----------------------------------------------------------
+Epoch 377, loss=0.668, time 7.045e+03
+
+Error number = 1761
+Model performance on test data: accuracy = 8.2390e-01
+-----------------------------------------------------------
+Epoch 378, loss=0.668, time 7.063e+03
+
+Error number = 1761
+Model performance on test data: accuracy = 8.2390e-01
+-----------------------------------------------------------
+Epoch 379, loss=0.668, time 7.082e+03
+
+Error number = 1760
+Model performance on test data: accuracy = 8.2400e-01
+-----------------------------------------------------------
+Epoch 380, loss=0.668, time 7.101e+03
+
+Error number = 1757
+Model performance on test data: accuracy = 8.2430e-01
+-----------------------------------------------------------
+Epoch 381, loss=0.667, time 7.120e+03
+
+Error number = 1756
+Model performance on test data: accuracy = 8.2440e-01
+-----------------------------------------------------------
+Epoch 382, loss=0.667, time 7.138e+03
+
+Error number = 1757
+Model performance on test data: accuracy = 8.2430e-01
+-----------------------------------------------------------
+Epoch 383, loss=0.667, time 7.157e+03
+
+Error number = 1757
+Model performance on test data: accuracy = 8.2430e-01
+-----------------------------------------------------------
+Epoch 384, loss=0.667, time 7.176e+03
+
+Error number = 1756
+Model performance on test data: accuracy = 8.2440e-01
+-----------------------------------------------------------
+Epoch 385, loss=0.666, time 7.194e+03
+
+Error number = 1749
+Model performance on test data: accuracy = 8.2510e-01
+-----------------------------------------------------------
+Epoch 386, loss=0.666, time 7.213e+03
+
+Error number = 1749
+Model performance on test data: accuracy = 8.2510e-01
+-----------------------------------------------------------
+Epoch 387, loss=0.666, time 7.232e+03
+
+Error number = 1749
+Model performance on test data: accuracy = 8.2510e-01
+-----------------------------------------------------------
+Epoch 388, loss=0.666, time 7.250e+03
+
+Error number = 1746
+Model performance on test data: accuracy = 8.2540e-01
+-----------------------------------------------------------
+Epoch 389, loss=0.665, time 7.269e+03
+
+Error number = 1741
+Model performance on test data: accuracy = 8.2590e-01
+-----------------------------------------------------------
+Epoch 390, loss=0.665, time 7.288e+03
+
+Error number = 1741
+Model performance on test data: accuracy = 8.2590e-01
+-----------------------------------------------------------
+Epoch 391, loss=0.665, time 7.307e+03
+
+Error number = 1736
+Model performance on test data: accuracy = 8.2640e-01
+-----------------------------------------------------------
+Epoch 392, loss=0.665, time 7.325e+03
+
+Error number = 1734
+Model performance on test data: accuracy = 8.2660e-01
+-----------------------------------------------------------
+Epoch 393, loss=0.664, time 7.344e+03
+
+Error number = 1736
+Model performance on test data: accuracy = 8.2640e-01
+-----------------------------------------------------------
+Epoch 394, loss=0.664, time 7.363e+03
+
+Error number = 1736
+Model performance on test data: accuracy = 8.2640e-01
+-----------------------------------------------------------
+Epoch 395, loss=0.664, time 7.381e+03
+
+Error number = 1735
+Model performance on test data: accuracy = 8.2650e-01
+-----------------------------------------------------------
+Epoch 396, loss=0.663, time 7.400e+03
+
+Error number = 1731
+Model performance on test data: accuracy = 8.2690e-01
+-----------------------------------------------------------
+Epoch 397, loss=0.663, time 7.419e+03
+
+Error number = 1733
+Model performance on test data: accuracy = 8.2670e-01
+-----------------------------------------------------------
+Epoch 398, loss=0.663, time 7.438e+03
+
+Error number = 1733
+Model performance on test data: accuracy = 8.2670e-01
+-----------------------------------------------------------
+Epoch 399, loss=0.663, time 7.456e+03
+
+Error number = 1733
+Model performance on test data: accuracy = 8.2670e-01
+-----------------------------------------------------------
+Epoch 400, loss=0.662, time 7.475e+03
+
+Error number = 1733
+Model performance on test data: accuracy = 8.2670e-01
+-----------------------------------------------------------
+Epoch 401, loss=0.662, time 7.494e+03
+
+Error number = 1730
+Model performance on test data: accuracy = 8.2700e-01
+-----------------------------------------------------------
+Epoch 402, loss=0.662, time 7.512e+03
+
+Error number = 1726
+Model performance on test data: accuracy = 8.2740e-01
+-----------------------------------------------------------
+Epoch 403, loss=0.662, time 7.531e+03
+
+Error number = 1727
+Model performance on test data: accuracy = 8.2730e-01
+-----------------------------------------------------------
+Epoch 404, loss=0.661, time 7.550e+03
+
+Error number = 1724
+Model performance on test data: accuracy = 8.2760e-01
+-----------------------------------------------------------
+Epoch 405, loss=0.661, time 7.569e+03
+
+Error number = 1726
+Model performance on test data: accuracy = 8.2740e-01
+-----------------------------------------------------------
+Epoch 406, loss=0.661, time 7.587e+03
+
+Error number = 1726
+Model performance on test data: accuracy = 8.2740e-01
+-----------------------------------------------------------
+Epoch 407, loss=0.661, time 7.606e+03
+
+Error number = 1726
+Model performance on test data: accuracy = 8.2740e-01
+-----------------------------------------------------------
+Epoch 408, loss=0.660, time 7.625e+03
+
+Error number = 1728
+Model performance on test data: accuracy = 8.2720e-01
+-----------------------------------------------------------
+Epoch 409, loss=0.660, time 7.643e+03
+
+Error number = 1728
+Model performance on test data: accuracy = 8.2720e-01
+-----------------------------------------------------------
+Epoch 410, loss=0.660, time 7.662e+03
+
+Error number = 1725
+Model performance on test data: accuracy = 8.2750e-01
+-----------------------------------------------------------
+Epoch 411, loss=0.660, time 7.681e+03
+
+Error number = 1727
+Model performance on test data: accuracy = 8.2730e-01
+-----------------------------------------------------------
+Epoch 412, loss=0.659, time 7.700e+03
+
+Error number = 1722
+Model performance on test data: accuracy = 8.2780e-01
+-----------------------------------------------------------
+Epoch 413, loss=0.659, time 7.718e+03
+
+Error number = 1722
+Model performance on test data: accuracy = 8.2780e-01
+-----------------------------------------------------------
+Epoch 414, loss=0.659, time 7.737e+03
+
+Error number = 1722
+Model performance on test data: accuracy = 8.2780e-01
+-----------------------------------------------------------
+Epoch 415, loss=0.659, time 7.756e+03
+
+Error number = 1721
+Model performance on test data: accuracy = 8.2790e-01
+-----------------------------------------------------------
+Epoch 416, loss=0.658, time 7.774e+03
+
+Error number = 1718
+Model performance on test data: accuracy = 8.2820e-01
+-----------------------------------------------------------
+Epoch 417, loss=0.658, time 7.793e+03
+
+Error number = 1713
+Model performance on test data: accuracy = 8.2870e-01
+-----------------------------------------------------------
+Epoch 418, loss=0.658, time 7.812e+03
+
+Error number = 1709
+Model performance on test data: accuracy = 8.2910e-01
+-----------------------------------------------------------
+Epoch 419, loss=0.658, time 7.831e+03
+
+Error number = 1708
+Model performance on test data: accuracy = 8.2920e-01
+-----------------------------------------------------------
+Epoch 420, loss=0.657, time 7.849e+03
+
+Error number = 1706
+Model performance on test data: accuracy = 8.2940e-01
+-----------------------------------------------------------
+Epoch 421, loss=0.657, time 7.868e+03
+
+Error number = 1705
+Model performance on test data: accuracy = 8.2950e-01
+-----------------------------------------------------------
+Epoch 422, loss=0.657, time 7.887e+03
+
+Error number = 1705
+Model performance on test data: accuracy = 8.2950e-01
+-----------------------------------------------------------
+Epoch 423, loss=0.657, time 7.905e+03
+
+Error number = 1704
+Model performance on test data: accuracy = 8.2960e-01
+-----------------------------------------------------------
+Epoch 424, loss=0.656, time 7.924e+03
+
+Error number = 1704
+Model performance on test data: accuracy = 8.2960e-01
+-----------------------------------------------------------
+Epoch 425, loss=0.656, time 7.943e+03
+
+Error number = 1699
+Model performance on test data: accuracy = 8.3010e-01
+-----------------------------------------------------------
+Epoch 426, loss=0.656, time 7.962e+03
+
+Error number = 1696
+Model performance on test data: accuracy = 8.3040e-01
+-----------------------------------------------------------
+Epoch 427, loss=0.656, time 7.980e+03
+
+Error number = 1695
+Model performance on test data: accuracy = 8.3050e-01
+-----------------------------------------------------------
+Epoch 428, loss=0.655, time 7.999e+03
+
+Error number = 1696
+Model performance on test data: accuracy = 8.3040e-01
+-----------------------------------------------------------
+Epoch 429, loss=0.655, time 8.018e+03
+
+Error number = 1696
+Model performance on test data: accuracy = 8.3040e-01
+-----------------------------------------------------------
+Epoch 430, loss=0.655, time 8.036e+03
+
+Error number = 1689
+Model performance on test data: accuracy = 8.3110e-01
+-----------------------------------------------------------
+Epoch 431, loss=0.655, time 8.055e+03
+
+Error number = 1689
+Model performance on test data: accuracy = 8.3110e-01
+-----------------------------------------------------------
+Epoch 432, loss=0.654, time 8.074e+03
+
+Error number = 1688
+Model performance on test data: accuracy = 8.3120e-01
+-----------------------------------------------------------
+Epoch 433, loss=0.654, time 8.093e+03
+
+Error number = 1687
+Model performance on test data: accuracy = 8.3130e-01
+-----------------------------------------------------------
+Epoch 434, loss=0.654, time 8.111e+03
+
+Error number = 1687
+Model performance on test data: accuracy = 8.3130e-01
+-----------------------------------------------------------
+Epoch 435, loss=0.653, time 8.130e+03
+
+Error number = 1685
+Model performance on test data: accuracy = 8.3150e-01
+-----------------------------------------------------------
+Epoch 436, loss=0.653, time 8.149e+03
+
+Error number = 1682
+Model performance on test data: accuracy = 8.3180e-01
+-----------------------------------------------------------
+Epoch 437, loss=0.653, time 8.167e+03
+
+Error number = 1682
+Model performance on test data: accuracy = 8.3180e-01
+-----------------------------------------------------------
+Epoch 438, loss=0.653, time 8.186e+03
+
+Error number = 1680
+Model performance on test data: accuracy = 8.3200e-01
+-----------------------------------------------------------
+Epoch 439, loss=0.652, time 8.205e+03
+
+Error number = 1675
+Model performance on test data: accuracy = 8.3250e-01
+-----------------------------------------------------------
+Epoch 440, loss=0.652, time 8.223e+03
+
+Error number = 1670
+Model performance on test data: accuracy = 8.3300e-01
+-----------------------------------------------------------
+Epoch 441, loss=0.652, time 8.242e+03
+
+Error number = 1668
+Model performance on test data: accuracy = 8.3320e-01
+-----------------------------------------------------------
+Epoch 442, loss=0.652, time 8.261e+03
+
+Error number = 1668
+Model performance on test data: accuracy = 8.3320e-01
+-----------------------------------------------------------
+Epoch 443, loss=0.651, time 8.280e+03
+
+Error number = 1670
+Model performance on test data: accuracy = 8.3300e-01
+-----------------------------------------------------------
+Epoch 444, loss=0.651, time 8.298e+03
+
+Error number = 1666
+Model performance on test data: accuracy = 8.3340e-01
+-----------------------------------------------------------
+Epoch 445, loss=0.651, time 8.317e+03
+
+Error number = 1661
+Model performance on test data: accuracy = 8.3390e-01
+-----------------------------------------------------------
+Epoch 446, loss=0.651, time 8.336e+03
+
+Error number = 1656
+Model performance on test data: accuracy = 8.3440e-01
+-----------------------------------------------------------
+Epoch 447, loss=0.650, time 8.354e+03
+
+Error number = 1656
+Model performance on test data: accuracy = 8.3440e-01
+-----------------------------------------------------------
+Epoch 448, loss=0.650, time 8.373e+03
+
+Error number = 1653
+Model performance on test data: accuracy = 8.3470e-01
+-----------------------------------------------------------
+Epoch 449, loss=0.650, time 8.392e+03
+
+Error number = 1652
+Model performance on test data: accuracy = 8.3480e-01
+-----------------------------------------------------------
+Epoch 450, loss=0.650, time 8.411e+03
+
+Error number = 1651
+Model performance on test data: accuracy = 8.3490e-01
+-----------------------------------------------------------
+Epoch 451, loss=0.649, time 8.429e+03
+
+Error number = 1651
+Model performance on test data: accuracy = 8.3490e-01
+-----------------------------------------------------------
+Epoch 452, loss=0.649, time 8.448e+03
+
+Error number = 1651
+Model performance on test data: accuracy = 8.3490e-01
+-----------------------------------------------------------
+Epoch 453, loss=0.649, time 8.467e+03
+
+Error number = 1648
+Model performance on test data: accuracy = 8.3520e-01
+-----------------------------------------------------------
+Epoch 454, loss=0.649, time 8.485e+03
+
+Error number = 1646
+Model performance on test data: accuracy = 8.3540e-01
+-----------------------------------------------------------
+Epoch 455, loss=0.648, time 8.504e+03
+
+Error number = 1645
+Model performance on test data: accuracy = 8.3550e-01
+-----------------------------------------------------------
+Epoch 456, loss=0.648, time 8.523e+03
+
+Error number = 1645
+Model performance on test data: accuracy = 8.3550e-01
+-----------------------------------------------------------
+Epoch 457, loss=0.648, time 8.542e+03
+
+Error number = 1644
+Model performance on test data: accuracy = 8.3560e-01
+-----------------------------------------------------------
+Epoch 458, loss=0.648, time 8.560e+03
+
+Error number = 1647
+Model performance on test data: accuracy = 8.3530e-01
+-----------------------------------------------------------
+Epoch 459, loss=0.647, time 8.579e+03
+
+Error number = 1642
+Model performance on test data: accuracy = 8.3580e-01
+-----------------------------------------------------------
+Epoch 460, loss=0.647, time 8.598e+03
+
+Error number = 1640
+Model performance on test data: accuracy = 8.3600e-01
+-----------------------------------------------------------
+Epoch 461, loss=0.647, time 8.616e+03
+
+Error number = 1637
+Model performance on test data: accuracy = 8.3630e-01
+-----------------------------------------------------------
+Epoch 462, loss=0.647, time 8.635e+03
+
+Error number = 1638
+Model performance on test data: accuracy = 8.3620e-01
+-----------------------------------------------------------
+Epoch 463, loss=0.646, time 8.654e+03
+
+Error number = 1636
+Model performance on test data: accuracy = 8.3640e-01
+-----------------------------------------------------------
+Epoch 464, loss=0.646, time 8.673e+03
+
+Error number = 1634
+Model performance on test data: accuracy = 8.3660e-01
+-----------------------------------------------------------
+Epoch 465, loss=0.646, time 8.691e+03
+
+Error number = 1636
+Model performance on test data: accuracy = 8.3640e-01
+-----------------------------------------------------------
+Epoch 466, loss=0.646, time 8.710e+03
+
+Error number = 1635
+Model performance on test data: accuracy = 8.3650e-01
+-----------------------------------------------------------
+Epoch 467, loss=0.645, time 8.729e+03
+
+Error number = 1631
+Model performance on test data: accuracy = 8.3690e-01
+-----------------------------------------------------------
+Epoch 468, loss=0.645, time 8.747e+03
+
+Error number = 1631
+Model performance on test data: accuracy = 8.3690e-01
+-----------------------------------------------------------
+Epoch 469, loss=0.645, time 8.766e+03
+
+Error number = 1629
+Model performance on test data: accuracy = 8.3710e-01
+-----------------------------------------------------------
+Epoch 470, loss=0.645, time 8.785e+03
+
+Error number = 1625
+Model performance on test data: accuracy = 8.3750e-01
+-----------------------------------------------------------
+Epoch 471, loss=0.644, time 8.803e+03
+
+Error number = 1624
+Model performance on test data: accuracy = 8.3760e-01
+-----------------------------------------------------------
+Epoch 472, loss=0.644, time 8.822e+03
+
+Error number = 1622
+Model performance on test data: accuracy = 8.3780e-01
+--------------------------------------------------------
