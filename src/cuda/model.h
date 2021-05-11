@@ -23,7 +23,8 @@ public:
     Model(float learning_rate);
     ~Model();
     float feed(float data[28][28], int label, bool isTrain);
-    void test();
+    int predict(float data[28][28]);
+    // void test();
     void apply_grad(float* weight, float* d_weight, int N);
 };
 

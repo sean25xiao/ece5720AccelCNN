@@ -60,7 +60,21 @@ __global__ void cuda_apply_grad(float* weight, float* d_weight, int N, float lea
 	}
 }
 
-// 打印测试结果
-// void Model::test(){
+// Predict the class of input sample
+int Model::predict(float data[28][28])
+{
+	forward(data);
 
-// }
+	int predLabel = 0;
+	float outputVec[10];
+
+	cudaMemcpy(outputVec, conv_2.output, sizeof(float) * 10, cudaMemcpyDeviceToHost);
+
+	for (int i = 1; i < 10; ++i) {
+		if (outputVec[predLabel] < outputVec[i]) {
+			predLabel = i;
+		}
+	}
+
+	return predLabel;
+}

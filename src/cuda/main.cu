@@ -68,11 +68,11 @@ int main(int argc, const char **argv)
     printf("==========================================\n\n");
 
     // Start training
-    int EPOCH = 20;
+    int EPOCH = 100;
     clock_t start, end;
     double timing=0;
 
-    for (int epoch = 1; epoch < EPOCH; epoch++)
+    for (int epoch = 1; epoch <= EPOCH; epoch++)
     {
         float loss = 0;
         
@@ -81,12 +81,29 @@ int main(int argc, const char **argv)
         { 
             loss += cnn.feed(train_set[i].data, train_set[i].label, true);
         }
+        loss /= train_cnt;
         end = clock();
 
         timing += ((double) (end - start)) / CLOCKS_PER_SEC;
 
         printf("Epoch %d, loss=%.3f, time %.3e\n", epoch, loss, timing);        
-    }
+        
+        // start evaluation
+        int err_cnt=0;
+        int predResult;
 
+        for (int i =0; i<test_cnt; i++)
+        {
+            predResult = cnn.predict(test_set[i].data);
+            if(predResult != test_set[i].label){
+                // printf("Model mistake on predicting  %d to be %d\n", test_set[i].label, predResult); // DEBUG
+                err_cnt ++;
+            }
+        }
+        double accuracy = (double)(test_cnt - err_cnt)/test_cnt;
+        printf("\nError number = %d", err_cnt);
+        printf("\nModel performance on test data: accuracy = %.4e\n", accuracy);
+        printf("-----------------------------------------------------------\n");
+    }
     return 0;
 }
