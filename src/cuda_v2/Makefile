@@ -1,8 +1,9 @@
 all:
-	/usr/local/cuda-10.1/bin/nvcc -lcuda -lcublas -g -G test.cu layers/*.cu -o test.out  -arch=compute_35 -Wno-deprecated-gpu-targets
+	/usr/local/cuda-10.1/bin/nvcc -lcuda -lcublas main.cu layers/*.cu -o main.out  -arch=compute_35 -Wno-deprecated-gpu-targets
 debug:
-	cuda-gdb ./test.out
+	/usr/local/cuda-10.1/bin/nvcc -lcuda -lcublas -g -G main.cu layers/*.cu -o main.out  -arch=compute_35 -Wno-deprecated-gpu-targets
+	cuda-gdb ./main.out
 run:
-	./test.out
+	./main.out
 clean:
-	rm test.out
+	rm main.out

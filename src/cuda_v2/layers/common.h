@@ -63,6 +63,7 @@ namespace nn{
      *      - float  lr: learning rate
      */  
     void apply_grad(float* param, float* grad, float lr, int param_fdim);
+    __global__ void cuda_apply_grad(float* param, float* grad, float lr, int N);
 }
 
 #endif
